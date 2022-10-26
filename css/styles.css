@@ -1,0 +1,158 @@
+@import "../css/import/variables.css";
+@import "../css/import/links.css";
+
+body {
+    background: var(--background-color);
+    font-family: var(--text-paragraph);
+    color: var(--text-color-dark);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin: 0px;
+    min-height: 100vh;
+
+}
+
+h1, h2, h3 {
+    font-family: var(--text-heading);
+}
+
+img {
+    width: 100%;
+}
+
+iconify-icon {
+    font-size: 2em;
+    color: var(--text-color-dark);
+}
+
+header, footer {
+    background: var(--header-footer-color);
+    color: var(--text-color-dark);
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header-checkout {
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+   width: 150px;
+}
+
+nav ul {
+    padding: 0px;
+}
+
+#menu-checkbox, .header__menu {
+    display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+    display: block;
+}
+
+nav li {
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    padding: 20px;
+}
+
+nav {
+    background: var(--header-footer-color);
+    top: 105px;
+    left: 0px;
+    padding: 0px 20px;
+    z-index: 1000;
+    position: absolute;
+    display: none;
+    border-radius: 0px 0px 15px 0px;
+}
+
+footer ul {
+    padding: 0px;
+    text-align: center;
+}
+
+footer li {
+    font-size: 0.8em;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0px 20px;
+}
+
+.product__image {
+    height: 200px;
+    object-fit: contain;
+} 
+
+.visually-hidden {
+    border-width: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+
+
+
+/* PRODUCTS PAGE */
+
+.product-intro {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/jackets_men.jpg);
+    min-height: 30vh;
+    background-size: cover; 
+    text-align: center;
+}
+
+.product-intro h1 {
+    font-size: 3em;
+    color: var(--text-color-light);
+}
+
+.product-intro ul {
+    padding: 0px;
+}
+
+.product-intro li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.product-intro a {
+    color: #96A5A6;
+}
+
+.product-intro .active {
+    color: var(--text-color-light)
+}
+
+
+
+.product-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 50px auto;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: left;
+}
+
+

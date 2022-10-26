@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title>RainyDays | Checkout</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/checkout.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="header-checkout">
+      <a href="index.html"
+        ><img
+          src="images/logo.png"
+          alt="The logotype for Rainydays rainjackets"
+      /></a>
+    </header>
+
+    <main class="checkout">
+      <iconify-icon icon="bi:arrow-left-circle"></iconify-icon>
+      <form action="checkout-success.html">
+        <div class="checkout-form">
+          <h1>Checkout</h1>
+          <section class="checkout-form__shipping">
+            <h2>Shipping information</h2>
+            <input type="text" id="name" name="name" value="Name" />
+            <input type="text" id="adress" name="adress" value="Adress" />
+            <input type="text" id="zipcode" name="zipcode" value="Zip Code" />
+            <input type="text" id="city" name="city" value="City" />
+            <input type="text" id="country" name="country" value="Country" />
+          </section>
+
+          <section class="checkout-form__payment">
+            <h2>Payment information</h2>
+            <div class="creditcard">
+              <iconify-icon icon="logos:visa"></iconify-icon>
+              <iconify-icon icon="logos:mastercard"></iconify-icon>
+            </div>
+            <input
+              type="text"
+              id="card-name"
+              name="card-name"
+              value="Cardholders Name"
+            />
+            <input
+              type="text"
+              id="card-number"
+              name="card-number"
+              value="Cardnumber"
+            />
+            <input
+              type="text"
+              id="month-year"
+              name="month-year"
+              value="Mm/Yy"
+            />
+            <input type="text" id="cvc" name="cvc" value="Cvc" />
+            <label for="cvc"
+              ><iconify-icon icon="emojione-monotone:information"></iconify-icon
+            ></label>
+          </section>
+          <div class="checkout-form__action">
+            <input
+              type="submit"
+              value="Complete purchase"
+              class="cta cta-big cta-execute"
+            />
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

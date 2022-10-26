@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title>RainyDays | Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <label for="menu-checkbox"
+        ><iconify-icon icon="pajamas:hamburger"></iconify-icon
+      ></label>
+      <input type="checkbox" id="menu-checkbox" />
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="index.html"
+        ><img
+          src="images/logo.png"
+          alt="The logotype for Rainydays rainjackets"
+      /></a>
+      <a href="shoppingbag.html">
+        <iconify-icon icon="clarity:shopping-bag-solid"></iconify-icon
+      ></a>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h1>expand your comfort zone</h1>
+      </section>
+
+      <section class="categories">
+        <div class="categories__item">
+          <a href="products.html">
+            <img
+              src="images/women.jpg"
+              alt="a women sitting on a cliff and dreaming about her next adventure"
+            />
+            <h2>women</h2></a
+          >
+        </div>
+        <div class="categories__item">
+          <a href="products.html">
+            <img
+              src="images/men.jpg"
+              alt="a man in his beloved darkgreen rainjacket"
+            />
+            <h2>men</h2></a
+          >
+        </div>
+      </section>
+
+      <section class="selling-points">
+        <div>
+          <h2>Follow your dreams</h2>
+          <p>
+            Get outside your comfort zone and begin the journey towards new
+            adventures
+          </p>
+        </div>
+        <div>
+          <a href="products.html" class="cta cta-big">explore our products</a>
+        </div>
+      </section>
+
+      <section class="featured">
+        <h2>Our bestsellers</h2>
+        <div class="featured__item">
+          <a href="product-page.html">
+            <img
+              src="images/products/xlr-24.png"
+              alt="image of the rainjacket xlr 24"
+              class="product__image"
+            />
+          </a>
+          <p>xlr 24</p>
+          <a href="shoppingbag.html" class="cta">view more</a>
+        </div>
+        <div class="featured__item">
+          <a href="product-page.html"
+            ><img
+              src="images/products/xlr-57.png"
+              alt="image of the rainjacket xlr 57"
+              class="product__image"
+          /></a>
+          <p>xlr 57</p>
+          <a href="shoppingbag.html" class="cta">view more</a>
+        </div>
+      </section>
+
+      <section class="subscribe">
+        <h2>Subscribe and follow the journey</h2>
+        <form action="subscribe.html">
+          <label class="visually-hidden" for="email">email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <input type="submit" value="Subscribe" class="cta" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

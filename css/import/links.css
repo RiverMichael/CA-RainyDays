@@ -1,0 +1,46 @@
+a {
+    text-decoration: none;
+}
+
+a {
+    color: var(--button-background-color);
+}
+
+a:hover {
+    color: #3bb1b5;
+}
+
+a:active {
+    color: var(--text-color-dark)
+}
+
+.active {
+    color: #A0CCD7;
+}
+
+.cta {
+    font-family: var(--text-heading);
+    display: inline-block;
+    background: var(--button-background-color);
+    color: #F1FAF3;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8em;
+    min-width: 114px;
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.cta-big {
+    font-size: 1em;
+    min-width: 260px;
+    padding: 12px 10px;
+
+}
+
+.cta-execute {
+    background: #F79E1B;
+    color: #04100D;
+}

@@ -1,0 +1,112 @@
+/* HOME PAGE */
+
+.intro {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/intro.jpg);
+    min-height: 40vh;
+    background-size: cover;
+    background-position: center; 
+}
+
+.intro h1 {
+    color: var(--text-color-light);
+    text-transform: capitalize;
+    position: absolute;
+    text-align: center;
+    font-size: 3em;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 330px;
+    max-width: 450px;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 40px;
+    text-align: center;
+    gap: 40px;
+}
+
+.categories__item h2 {
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.selling-points {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/michael_joey-mountains.jpg);
+    background-size: cover;
+    background-position: right bottom;
+    min-height: 40vh;
+    color: var(--text-color-light);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.selling-points p {
+    max-width: 380px;
+}
+
+.selling-points h2,
+.featured h2,
+.subscribe h2 {
+    font-size: 2em;
+}
+
+.featured {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px 20px;
+}
+
+.featured > * {
+    flex: 1;
+    margin-top: 50px;
+}
+
+.featured h2 {
+    flex: 1 0 100%;
+    margin: 0px;
+}
+
+.featured__item p {
+    font-family: var(--text-heading);
+    font-weight: bold;  
+    text-transform: uppercase;
+}
+
+.subscribe {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/subscribe.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 30vh;
+    color: var(--text-color-light);
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+.subscribe > * {
+    flex: 1;
+}
+
+.subscribe h2 {
+    flex: 1 0 100%;
+    margin-top: 0px;
+}
+
+#email {
+    background: var(--form-background-color);
+    border: 2px solid var(--button-background-color);
+    border-radius: 8px;
+    padding: 8px;
+}
+

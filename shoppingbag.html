@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title>RainyDays | Shopping bag</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/shoppingbag.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <label for="menu-checkbox"
+        ><iconify-icon icon="pajamas:hamburger"></iconify-icon
+      ></label>
+      <input type="checkbox" id="menu-checkbox" />
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="index.html"
+        ><img
+          src="images/logo.png"
+          alt="The logotype for Rainydays rainjackets"
+      /></a>
+      <a href="shoppingbag.html">
+        <iconify-icon icon="clarity:shopping-bag-solid"></iconify-icon
+      ></a>
+    </header>
+
+    <main>
+      <iconify-icon icon="bi:x-circle"></iconify-icon>
+      <section class="shopping-bag">
+        <h1>Shopping bag</h1>
+        <div class="shopping-bag__item">
+          <a href="product-page.html"
+            ><img src="images/products/xlr-24.png"
+          /></a>
+          <h2>XLR 24</h2>
+          <p>size L</p>
+          <p>€ 150</p>
+        </div>
+        <div class="shopping-bag__item">
+          <a href="product-page.html"
+            ><img src="images/products/xlr-57.png"
+          /></a>
+          <h2>XLR 57</h2>
+          <p>size L</p>
+          <p>€ 150</p>
+        </div>
+        <div class="shopping-bag__total">
+          <h3>Total amount</h3>
+          <p>€ 300</p>
+        </div>
+      </section>
+      <a href="checkout.html" class="cta cta-big cta-execute"
+        >Proceed to checkout</a
+      >
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

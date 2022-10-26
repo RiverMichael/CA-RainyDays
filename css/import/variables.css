@@ -1,0 +1,11 @@
+:root {
+    --text-header: "Lato";
+    --text-paragraph: "Karla";
+    --text-color-button: #F4FFFC;
+    --text-color-dark: #0A3641;
+    --text-color-light: #F1FAF3;
+    --header-footer-color: #E7F0E9;
+    --background-color: #F3F4F4;
+    --button-background-color: #205D5F;
+    --form-background-color: #C9D2CB;
+}

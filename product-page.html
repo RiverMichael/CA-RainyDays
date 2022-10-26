@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title>RainyDays | XLR 57</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/product-page.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <label for="menu-checkbox"
+        ><iconify-icon icon="pajamas:hamburger"></iconify-icon
+      ></label>
+      <input type="checkbox" id="menu-checkbox" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="index.html"
+        ><img
+          src="images/logo.png"
+          alt="The logotype for Rainydays rainjackets"
+      /></a>
+      <a href="shoppingbag.html">
+        <iconify-icon icon="clarity:shopping-bag-solid"></iconify-icon
+      ></a>
+    </header>
+
+    <main>
+      <iconify-icon icon="bi:arrow-left-circle"></iconify-icon>
+      <section class="product-specification">
+        <h1>XLR 57</h1>
+        <div class="product-specification__image">
+          <a href="">
+            <img src="images/products/xlr-57.png" />
+            <iconify-icon icon="bi:zoom-in"></iconify-icon>
+          </a>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies
+          integer semper mauris, aliquam condimentum quis. Nec ornare mi vitae
+          vel diam. Nec nisl id mi a volutpat sed sit. Odio imperdiet sed cursus
+          nisl, leo mi. Varius blandit iaculis aliquam turpis. Hendrerit cras
+          proin sit accumsan massa egestas feugiat amet, ipsum.
+        </p>
+        <p class="price">€ 150</p>
+
+        <form action="shoppingbag.html">
+          <div class="size-form">
+            <input type="radio" id="small" name="size" value="small" />
+            <label for="small">S</label>
+            <input type="radio" id="medium" name="size" value="medium" />
+            <label for="small">M</label>
+            <input type="radio" id="large" name="size" value="large" />
+            <label for="small">L</label>
+            <input
+              type="radio"
+              id="extralarge"
+              name="size"
+              value="extralarge"
+            />
+            <label for="small">XL</label>
+            <div class="size-form__action">
+              <input type="submit" value="Add to cart" class="cta" />
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
