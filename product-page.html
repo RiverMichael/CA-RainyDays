@@ -41,44 +41,73 @@
     </header>
 
     <main>
-      <iconify-icon icon="bi:arrow-left-circle"></iconify-icon>
-      <section class="product-specification">
-        <h1>XLR 57</h1>
-        <div class="product-specification__image">
-          <a href="">
-            <img src="images/products/xlr-57.png" />
-            <iconify-icon icon="bi:zoom-in"></iconify-icon>
-          </a>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies
-          integer semper mauris, aliquam condimentum quis. Nec ornare mi vitae
-          vel diam. Nec nisl id mi a volutpat sed sit. Odio imperdiet sed cursus
-          nisl, leo mi. Varius blandit iaculis aliquam turpis. Hendrerit cras
-          proin sit accumsan massa egestas feugiat amet, ipsum.
-        </p>
-        <p class="price">€ 150</p>
+      <a href="#" onclick="history.back();">
+        <iconify-icon
+          icon="bi:arrow-left-circle"
+          class="icon__back"
+        ></iconify-icon
+      ></a>
 
-        <form action="shoppingbag.html">
-          <div class="size-form">
-            <input type="radio" id="small" name="size" value="small" />
-            <label for="small">S</label>
-            <input type="radio" id="medium" name="size" value="medium" />
-            <label for="small">M</label>
-            <input type="radio" id="large" name="size" value="large" />
-            <label for="small">L</label>
-            <input
-              type="radio"
-              id="extralarge"
-              name="size"
-              value="extralarge"
-            />
-            <label for="small">XL</label>
+      <section class="product-spec">
+        <h1>XLR 57</h1>
+        <div class="product-image">
+          <img src="images/products/xlr-57.png" />
+
+          <div class="product-image__thumbnails">
+            <div>
+              <img src="images/products/xlr-57.png" class="product-thumbnail" />
+            </div>
+            <div>
+              <img src="images/products/xlr-57.png" class="product-thumbnail" />
+            </div>
+            <div>
+              <img src="images/products/xlr-57.png" class="product-thumbnail" />
+            </div>
+            <div>
+              <img src="images/products/xlr-57.png" class="product-thumbnail" />
+            </div>
+          </div>
+        </div>
+
+        <div class="product-spec__details">
+          <p class="product-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies
+            integer semper mauris, aliquam condimentum quis. Nec ornare mi vitae
+            vel diam. Nec nisl id mi a volutpat sed sit. Odio imperdiet sed
+            cursus nisl, leo mi. Varius blandit iaculis aliquam turpis.
+            Hendrerit cras proin sit accumsan massa egestas feugiat amet, ipsum.
+          </p>
+          <p class="product-price">€ 150</p>
+
+          <form action="shoppingbag.html" class="size-form">
+            <div class="size-form__select">
+              <div class="size">
+                <input type="radio" id="small" name="size" value="small" />
+                <label for="small">S</label>
+              </div>
+              <div class="size">
+                <input type="radio" id="medium" name="size" value="medium" />
+                <label for="medium">M</label>
+              </div>
+              <div class="size">
+                <input type="radio" id="large" name="size" value="large" />
+                <label for="large">L</label>
+              </div>
+              <div class="size">
+                <input
+                  type="radio"
+                  id="extralarge"
+                  name="size"
+                  value="extralarge"
+                />
+                <label for="extralarge">XL</label>
+              </div>
+            </div>
             <div class="size-form__action">
               <input type="submit" value="Add to cart" class="cta" />
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </section>
     </main>
 

@@ -25,6 +25,14 @@ iconify-icon {
     color: var(--text-color-dark);
 }
 
+.icon__back {
+    margin: 20px 20px 0px;
+}
+
+.icon__small {
+    font-size: 1.2em;
+}
+
 header, footer {
     background: var(--header-footer-color);
     color: var(--text-color-dark);
@@ -110,56 +118,51 @@ footer li {
     width: 1px;
 }
 
+/* PRODUCT PAGE */
 
+.product-spec {
+    max-width: 1000px;
+    margin: 30px 20px 50px;
+}
 
-
-/* PRODUCTS PAGE */
-
-.product-intro {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/men.jpg);
-    min-height: 30vh;
-    background-size: cover; 
-    background-position: center;
+.product-spec h1 {
     text-align: center;
+    font-size: 3em;
+    margin-top: 0px;
 }
 
-.product-intro h1 {
-    font-size: 2.5em;
-    color: var(--text-color-light);
+.product-spec,
+.size {
+    display: flex;
+    flex-direction: column;
 }
 
-.product-intro ul {
-    padding: 0px;
-    margin: 0px;
+.product-spec,
+.size-form > * {
+    flex: 1;
 }
 
-.product-intro li {
-    display: inline-block;
-    padding: 20px;
+.product-image__thumbnails {
+    display: flex;
+    margin-top: 10px;
+    gap: 5px;
 }
 
-.product-intro a {
-    text-transform: uppercase;
-    color: var(--text-color-light);
+.product-price {
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
-.product-intro .active {
-    color: #89978C;
-    font-size: 1.5em;
-}
-
-
-
-.product-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 50px 20px;
-    gap: 50px;
-}
-
-.product {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.size-form {
+    display: flex;
+    text-align: center;
     align-items: center;
-    gap: 30px;
+}
+
+.size-form__select {
+    display: flex;
+}
+
+.product-thumbnail {
+    border: 0.5px solid var(--text-color-dark);
 }
