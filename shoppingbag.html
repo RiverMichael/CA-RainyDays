@@ -40,36 +40,61 @@
       ></a>
     </header>
 
-    <main>
-      <iconify-icon icon="bi:x-circle"></iconify-icon>
-      <section class="shopping-bag">
+    <main class="shoppingbag">
+      <a href="#" onclick="history.back();">
+        <iconify-icon icon="bi:x-circle" class="icon__back"></iconify-icon
+      ></a>
+
+      <section class="shoppingbag__cart">
         <h1>Shopping bag</h1>
-        <div class="shopping-bag__item">
-          <a href="product-page.html"
-            ><img src="images/products/xlr-24.png"
-          /></a>
-          <h2>XLR 24</h2>
-          <p>size L</p>
-          <p>€ 150</p>
+        <div class="shoppingbag__item">
+          <div class="item__image">
+            <a href="product-page.html"
+              ><img src="images/products/xlr-24.png" class="product__image"
+            /></a>
+          </div>
+          <div class="item__info">
+            <h2>XLR 24</h2>
+            <p>size L</p>
+          </div>
+          <div class="item__price">
+            <p>€ 150</p>
+          </div>
         </div>
-        <div class="shopping-bag__item">
-          <a href="product-page.html"
-            ><img src="images/products/xlr-57.png"
-          /></a>
-          <h2>XLR 57</h2>
-          <p>size L</p>
-          <p>€ 150</p>
+        <div class="shoppingbag__item">
+          <div class="item__image">
+            <a href="product-page.html"
+              ><img src="images/products/xlr-57.png" class="product__image"
+            /></a>
+          </div>
+          <div class="item__info">
+            <h2>XLR 57</h2>
+            <p>size XL</p>
+          </div>
+          <div class="item__price">
+            <p>€ 150</p>
+          </div>
         </div>
-        <div class="shopping-bag__total">
+        <div class="shoppingbag__total">
           <h3>Total amount</h3>
-          <p>€ 300</p>
+          <p class="total-price">€ 300</p>
         </div>
       </section>
-      <a href="checkout.html" class="cta cta-big cta-execute"
-        >Proceed to checkout</a
-      >
+
+      <div class="shoppingbag__checkout">
+        <a href="checkout.html" class="cta cta-big cta-execute"
+          >Proceed to checkout</a
+        >
+      </div>
     </main>
 
-    <footer></footer>
+    <footer>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </footer>
   </body>
 </html>

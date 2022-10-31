@@ -112,6 +112,6 @@
     border: 2px solid var(--button-background-color);
     border-radius: 8px;
     padding: 8px;
-
+    opacity: 0.8;
 }
 
