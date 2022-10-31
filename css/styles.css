@@ -36,6 +36,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
 }
 
 .header-checkout {
@@ -51,7 +54,7 @@ nav ul {
     padding: 0px;
 }
 
-#menu-checkbox, .header__menu {
+#menu-checkbox {
     display: none;
 }
 
@@ -62,6 +65,7 @@ nav ul {
 nav li {
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 1.5em;
     display: block;
     padding: 20px;
 }
@@ -70,7 +74,7 @@ nav {
     background: var(--header-footer-color);
     top: 105px;
     left: 0px;
-    padding: 0px 20px;
+    padding: 0px 20px 20px;
     z-index: 1000;
     position: absolute;
     display: none;
@@ -112,19 +116,21 @@ footer li {
 /* PRODUCTS PAGE */
 
 .product-intro {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/jackets_men.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/men.jpg);
     min-height: 30vh;
     background-size: cover; 
+    background-position: center;
     text-align: center;
 }
 
 .product-intro h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     color: var(--text-color-light);
 }
 
 .product-intro ul {
     padding: 0px;
+    margin: 0px;
 }
 
 .product-intro li {
@@ -133,11 +139,13 @@ footer li {
 }
 
 .product-intro a {
-    color: #96A5A6;
+    text-transform: uppercase;
+    color: var(--text-color-light);
 }
 
 .product-intro .active {
-    color: var(--text-color-light)
+    color: #89978C;
+    font-size: 1.5em;
 }
 
 
@@ -145,14 +153,13 @@ footer li {
 .product-list {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 50px auto;
+    margin: 50px 20px;
+    gap: 50px;
 }
 
 .product {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    text-align: left;
+    gap: 30px;
 }
-
-

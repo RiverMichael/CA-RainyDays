@@ -2,8 +2,8 @@
 
 .intro {
     position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/intro.jpg);
-    min-height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/intro.jpg);
+    min-height: 50vh;
     background-size: cover;
     background-position: center; 
 }
@@ -14,7 +14,7 @@
     position: absolute;
     text-align: center;
     font-size: 3em;
-    top: 50px;
+    top: 80px;
     left: 50%;
     transform: translateX(-50%);
     min-width: 330px;
@@ -24,13 +24,17 @@
 .categories {
     display: flex;
     flex-direction: column;
-    margin: 50px 40px;
+    margin: 50px 20px;
     text-align: center;
     gap: 40px;
 }
 
+.categories__item {
+    margin: 0px 20px;
+}
+
 .categories__item h2 {
-    margin-bottom: 0px;
+    margin: 10px 0px 0px;
     text-transform: uppercase;
 }
 
@@ -108,5 +112,6 @@
     border: 2px solid var(--button-background-color);
     border-radius: 8px;
     padding: 8px;
+
 }
 
