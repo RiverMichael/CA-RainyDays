@@ -107,11 +107,5 @@
     margin-top: 0px;
 }
 
-#email {
-    background: var(--form-background-color);
-    border: 2px solid var(--button-background-color);
-    border-radius: 8px;
-    padding: 8px;
-    opacity: 0.8;
-}
+
 

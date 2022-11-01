@@ -29,9 +29,7 @@ iconify-icon {
     margin: 20px 20px 0px;
 }
 
-.icon__small {
-    font-size: 1.2em;
-}
+
 
 header, footer {
     background: var(--header-footer-color);
@@ -102,6 +100,15 @@ footer li {
     padding: 0px 20px;
 }
 
+input {
+    background: var(--form-background-color);
+    border: 1px solid var(--text-color-dark);
+    border-radius: 8px;
+    padding: 10px;
+    opacity: 0.8;
+    color: var(--text-color-dark);
+}
+
 .visually-hidden {
     border-width: 0;
     clip: rect(1px, 1px, 1px, 1px);
@@ -113,75 +120,91 @@ footer li {
     width: 1px;
 }
 
-/* SHOPPING BAR */
+/* CHECKOUT */
 
-.shoppingbag .icon__back {
-    color: var(--text-color-light);
+.icon__small {
+    font-size: 1em;
 }
 
-.shoppingbag {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/green-forest.jpg);
-    background-size: cover;
-    background-position: center;
-    text-align: right;
-}
-
-.shoppingbag__cart {
-    background: #F3F4F4;
-    opacity: 0.8;
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    border: 2px solid var(--text-color-dark);
-    border-radius: 15px;
-    box-shadow: 0px 3.5px 3.5px rgba(0, 0, 0, 0.25);
-    padding: 20px;
-    max-width: 600px;
-}
-
-.shoppingbag__cart h1 {
-    font-size: 2.5em;
-    margin: 0px;
-}
-
-.shoppingbag__item {
-    display: flex;
-    margin-top: 50px;
-    gap: 15px;
-}
-
-.shoppingbag__item > * {
-    flex: 1;
-}
-
-.item__info h2,
-.item__info p,
-.item__price p {
-    margin: 0px;
-}
-
-.item__info {
-    text-align: left;
-}
-
-.item__price {
-    text-align: right;
-}
-
-.shoppingbag__total {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 20px;
-}
-
-.total-price {
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-.shoppingbag__checkout {
+.checkout-form__action {
     text-align: center;
     margin-bottom: 70px;
+}
+
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    border: 2px solid var(--text-color-dark);
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    gap: 20px;
+    max-width: 400px; 
+}
+
+.checkout-form h1 {
+    text-align: center;
+    font-size: 3em;
+    margin: 0px;
+}
+
+.payment-cards img {
+    width: 10%;
+}
+
+.checkout-form__shipping,
+.checkout-form__payment {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#city,
+#zipcode {
+    width: 50%;
+}
+
+#exp-date,
+#cvc {
+    width: 3.5em;
+}
+
+.checkout-form h2 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin: 0px;
+}
+
+#cvc-checkbox,
+.cvc-info {
+    display: none;
+}
+
+#cvc-checkbox:checked ~ .cvc-info {
+display: inline-block;
+font-size: 0.8em;
+color: #8C0909;
+text-transform: uppercase;
+}
+
+/* reference: https://stackoverflow.com/questions/3790935/can-i-hide-the-html5-number-input-s-spin-box */
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance:textfield; 
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input__small {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
 }

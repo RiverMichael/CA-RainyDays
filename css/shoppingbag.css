@@ -1,0 +1,72 @@
+/* SHOPPING BAG */
+
+.shoppingbag .icon__back {
+    color: var(--text-color-light);
+}
+
+.shoppingbag {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/green-forest.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: right;
+}
+
+.shoppingbag__cart {
+    background: #F3F4F4;
+    opacity: 0.8;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid var(--text-color-dark);
+    border-radius: 15px;
+    box-shadow: 0px 3.5px 3.5px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    max-width: 600px;
+}
+
+.shoppingbag__cart h1 {
+    font-size: 2.5em;
+    margin: 0px;
+}
+
+.shoppingbag__item {
+    display: flex;
+    margin-top: 50px;
+    gap: 15px;
+}
+
+.shoppingbag__item > * {
+    flex: 1;
+}
+
+.item__info h2,
+.item__info p,
+.item__price p {
+    margin: 0px;
+}
+
+.item__info {
+    text-align: left;
+}
+
+.item__price {
+    text-align: right;
+}
+
+.shoppingbag__total {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.total-price {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.shoppingbag__action {
+    text-align: center;
+    margin-bottom: 70px;
+}
