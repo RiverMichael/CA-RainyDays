@@ -1,6 +1,6 @@
 /* PRODUCTS PAGE */
 
-.product-intro {
+.products-intro {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/men.jpg);
     min-height: 30vh;
     background-size: cover; 
@@ -8,27 +8,27 @@
     text-align: center;
 }
 
-.product-intro h1 {
+.products-intro h1 {
     font-size: 2.5em;
     color: var(--text-color-light);
 }
 
-.product-intro ul {
+.products-intro ul {
     padding: 0px;
     margin: 0px;
 }
 
-.product-intro li {
+.products-intro li {
     display: inline-block;
     padding: 20px;
 }
 
-.product-intro a {
+.products-intro a {
     text-transform: uppercase;
     color: var(--text-color-light);
 }
 
-.product-intro .active {
+.products-intro .active {
     color: #89978C;
     font-size: 1.5em;
 }

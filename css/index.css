@@ -65,8 +65,10 @@
 .featured {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
     margin: 50px 20px;
+    max-width: 1000px;
 }
 
 .featured > * {

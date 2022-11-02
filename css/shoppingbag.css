@@ -11,7 +11,7 @@
     text-align: right;
 }
 
-.shoppingbag__cart {
+.shoppingbag__card {
     background: #F3F4F4;
     opacity: 0.8;
     margin: 30px;
@@ -25,32 +25,32 @@
     max-width: 600px;
 }
 
-.shoppingbag__cart h1 {
+.shoppingbag__card h1 {
     font-size: 2.5em;
     margin: 0px;
 }
 
-.shoppingbag__item {
+.shoppingbag-item {
     display: flex;
     margin-top: 50px;
     gap: 15px;
 }
 
-.shoppingbag__item > * {
+.shoppingbag-item > * {
     flex: 1;
 }
 
-.item__info h2,
-.item__info p,
-.item__price p {
+.shoppingbag-item__info h2,
+.shoppingbag-item__info p,
+.shoppingbag-item__price p {
     margin: 0px;
 }
 
-.item__info {
+.shoppingbag-item__info {
     text-align: left;
 }
 
-.item__price {
+.shoppingbag-item__price {
     text-align: right;
 }
 
