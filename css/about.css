@@ -1,7 +1,7 @@
 /* ABOUT */
 
 .about {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/michael_joey-cliff.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/michael_joey-cliff.jpg);
     background-size: cover;
     background-position: center bottom;
     color: var(--text-color-light);

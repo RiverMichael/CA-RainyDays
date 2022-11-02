@@ -1,0 +1,26 @@
+/* SUBSCRIBE SUCCESS */
+
+.subscribe-success {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/road-to-the-journey.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    color: var(--text-color-light);
+}
+
+.subscribe-success__journey {
+    position: absolute;
+    top: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 330px;
+}
+
+.subscribe-success__journey h1 {
+    font-size: 2.5em;
+}
+
+.subscribe-success__action {
+    margin-top: 100px;
+}

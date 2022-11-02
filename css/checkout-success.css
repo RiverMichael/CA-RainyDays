@@ -1,0 +1,27 @@
+/* CHECKOUT SUCCESS */
+
+.checkout-success {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/checkout-success.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: var(--text-color-light);
+    position: relative;
+}
+
+.checkout-success h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.checkout-success__text {
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 320px;
+}
+
+.checkout-success__action {
+    margin-top: 70px;
+}
