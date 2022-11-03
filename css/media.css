@@ -1,3 +1,24 @@
 @media (min-width: 600px) {
     
+.intro {
+    background-position: center top;
+}
+
+.categories,
+.featured {
+    margin: 50px auto;
+    flex-direction: row;
+}
+
+.featured {
+    flex-wrap: wrap;
+}
+
+}
+
+@media (min-width: 900px) {
+
+    .selling-points {
+        background-position: right;
+    }
 }

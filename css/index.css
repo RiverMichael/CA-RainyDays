@@ -21,16 +21,18 @@
     max-width: 450px;
 }
 
-.categories {
+.categories,
+.featured {
     display: flex;
     flex-direction: column;
     margin: 50px 20px;
+    max-width: 1000px;
     text-align: center;
-    gap: 40px;
 }
 
-.categories__item {
-    margin: 0px 20px;
+.categories__item,
+.featured__item {
+    padding: 20px 50px;
 }
 
 .categories__item h2 {
@@ -42,18 +44,22 @@
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/michael_joey-mountains.jpg);
     background-size: cover;
     background-position: right bottom;
-    min-height: 40vh;
+    min-height: 50vh;
     color: var(--text-color-light);
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 20px;
+    position: relative;
 }
 
-.selling-points p {
-    max-width: 380px;
+.selling-points__text {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 330px;
+}
+
+.selling-points__action {
+    margin-top: 70px;
 }
 
 .selling-points h2,
@@ -61,18 +67,15 @@
 .subscribe h2 {
     font-size: 2em;
 }
-
-.featured {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 50px 20px;
-    max-width: 1000px;
+.categories > * {
+    flex: 1;
 }
-
 .featured > * {
     flex: 1;
-    margin-top: 50px;
+}
+
+.featured {
+    gap: 40px;
 }
 
 .featured h2 {
