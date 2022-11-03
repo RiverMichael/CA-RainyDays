@@ -22,7 +22,7 @@ a:active {
     font-family: var(--text-heading);
     display: inline-block;
     background: var(--button-background-color);
-    color: #F1FAF3;
+    color: var(--text-color-light);
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -35,6 +35,16 @@ a:active {
     opacity: 1;
 }
 
+.cta:hover {
+    background: #66A3A5;
+    color: var(--text-color-light);
+}
+
+.cta:active {
+    background: #002123;
+    color: var(--text-color-light);
+}
+
 .cta-big {
     font-size: 1em;
     min-width: 260px;
@@ -44,5 +54,15 @@ a:active {
 
 .cta-execute {
     background: #F79E1B;
+    color: #04100D;
+}
+
+.cta-execute:hover {
+    background: #EEB765;
+    color: #04100D;
+}
+
+.cta-execute:active {
+    background: #533B18;
     color: #04100D;
 }

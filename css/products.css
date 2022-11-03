@@ -28,6 +28,10 @@
     color: var(--text-color-light);
 }
 
+.products-intro a:hover {
+    color: #A0CCD7;
+}
+
 .products-intro .active {
     color: #89978C;
     font-size: 1.5em;

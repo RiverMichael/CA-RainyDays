@@ -111,6 +111,17 @@ input {
     color: var(--text-color-dark);
 }
 
+input:focus-visible {
+    outline: none;
+    border: 2px solid var(--text-color-dark);
+    background: #fff;
+}
+
+input:hover {
+    outline: none;
+    border: 2px solid var(--text-color-dark);
+}
+
 .visually-hidden {
     border-width: 0;
     clip: rect(1px, 1px, 1px, 1px);
