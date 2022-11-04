@@ -4,13 +4,19 @@
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/men.jpg);
     min-height: 30vh;
     background-size: cover; 
-    background-position: center;
+    background-position: center top;
     text-align: center;
+    position: relative;
 }
 
 .products-intro h1 {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 2.5em;
     color: var(--text-color-light);
+    min-width: 330px;
 }
 
 .products-intro ul {
@@ -41,12 +47,27 @@
     display: grid;
     grid-template-columns: 1fr;
     margin: 50px 20px;
+    max-width: 1200px;
     gap: 50px;
+    justify-items: center;
 }
 
-.product-list__item {
+.product-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 30px;
+    padding: 5px 5px 10px;
+    max-width: 400px;
 }
+
+.product-card:hover {
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px var(--text-color-dark);
+}
+
+.card-link,
+.card-link:hover {
+    color: var(--text-color-dark);
+}
+
