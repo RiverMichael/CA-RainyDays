@@ -40,7 +40,6 @@
     .product-list {
         grid-template-columns: repeat(2, 1fr);
     }
-}
 
 @media (min-width: 900px) {
 
@@ -55,6 +54,11 @@
 
     .products-intro h1 {
         top: 80px;
+    }
+
+    .product {
+        flex-direction: row;
+        margin: 30px auto 50px;
     }
 }
 
