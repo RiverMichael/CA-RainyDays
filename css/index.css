@@ -43,7 +43,7 @@
 .selling-points {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/michael_joey-mountains.jpg);
     background-size: cover;
-    background-position: right bottom;
+    background-position: right;
     min-height: 50vh;
     color: var(--text-color-light);
     text-align: center;

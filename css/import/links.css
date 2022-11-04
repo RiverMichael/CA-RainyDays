@@ -16,6 +16,7 @@ a:active {
 
 .active {
     color: #656E67;
+    text-decoration: underline;
 }
 
 .cta {

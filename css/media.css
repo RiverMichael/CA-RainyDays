@@ -1,4 +1,27 @@
 @media (min-width: 600px) {
+
+    header label {
+        display: none;
+    }
+
+    header {
+        align-items: baseline;
+    }
+
+    nav {
+        display: block;
+        position: static;
+    }
+
+    nav li,
+    footer li {
+        font-size: 1em;
+    }
+
+    nav li {
+        display: inline-block;
+        padding: 0px 10px;
+    }
     
 .intro {
     background-position: center top;
@@ -14,11 +37,18 @@
     flex-wrap: wrap;
 }
 
+
+
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
+    
+    header img {
+        width: 200px;
+    }
 
-    .selling-points {
-        background-position: right;
+    nav li {
+        padding: 0px 20px;
+        font-size: 1.2em;
     }
 }
