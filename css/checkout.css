@@ -1,7 +1,8 @@
 /* CHECKOUT */
 
-.icon__small {
+.icon__info {
     font-size: 1.2em;
+    cursor: help;
 }
 
 .checkout-form__action {

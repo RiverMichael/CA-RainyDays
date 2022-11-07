@@ -45,18 +45,12 @@
 }
 
 .categories-image {
-    border: 1px solid var(--background-color);
     border-radius: 10px;
 }
    
 .categories-image:hover {
-    border: 1px solid var(--text-color-dark);
     box-shadow: 0px 0px 10px var(--text-color-dark);
 }    
-
-
-
-
 
 .selling-points {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/michael_joey-mountains.jpg);
@@ -116,18 +110,16 @@
     color: var(--text-color-light);
     padding: 50px 20px;
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-evenly;
-}
-
-.subscribe > * {
-    flex: 1;
 }
 
 .subscribe h2 {
-    flex: 1 0 100%;
-    margin-top: 0px;
+    margin: 30px 0px 80px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 #email {

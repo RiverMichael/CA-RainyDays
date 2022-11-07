@@ -3,21 +3,22 @@
 .subscribe-success {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/road-to-the-journey.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
     position: relative;
     text-align: center;
     color: var(--text-color-light);
 }
 
-.subscribe-success__journey {
+.subscribe-success__text {
     position: absolute;
-    top: 15vh;
+    top: 10vh;
     left: 50%;
     transform: translateX(-50%);
     min-width: 330px;
+    max-width: 450px;
 }
 
-.subscribe-success__journey h1 {
+.subscribe-success__text h1 {
     font-size: 2.5em;
 }
 

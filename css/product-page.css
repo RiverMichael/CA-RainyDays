@@ -34,6 +34,7 @@
     display: flex;
     margin-top: 10px;
     gap: 10px;
+    cursor: zoom-in;
 }
 
 .product-image,
@@ -58,7 +59,7 @@
 }
 
 .product-thumbnail {
-    border: 1px solid var(--text-color-dark);
+    border: 2px solid var(--background-color);
 }
 
 .product-thumbnail:hover {

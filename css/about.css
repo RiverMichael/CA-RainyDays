@@ -10,14 +10,8 @@
 }
 
 .about__story {
-    display: flex;
-    flex-direction: column;
     margin: 50px 30px;
     max-width: 600px;
-}
-
-.about__story > * {
-    flex: 1;
 }
 
 .about__story h1 {
