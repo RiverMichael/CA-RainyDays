@@ -1,9 +1,18 @@
 /* CONTACT PAGE */
 
-.contact {
+.contact, .contact-info, .contact-info__item {
     display: flex;
-    flex-direction: column;
+}
+
+.contact, .contact-info__item {
     align-items: center;
+}
+
+.contact, .contact-info {
+    flex-direction: column;
+}
+
+.contact {
     margin: 50px 20px;
     max-width: 800px;
 }
@@ -27,15 +36,11 @@
 }
 
 .contact-info__item {
-    display: flex;
-    align-items: center;
     gap: 5px;
     margin-bottom: 5px;
 }
 
 .contact-info {
-    display: flex;
-    flex-direction: column;
     gap: 20px;
     margin: 20px;
 }

@@ -1,8 +1,6 @@
 a {
     text-decoration: none;
-}
-
-a {
+    text-transform: uppercase;
     color: var(--button-background-color);
 }
 
@@ -35,38 +33,52 @@ a:active {
     border: none;
 }
 
-button {
-    min-width: 134px;
-}
-
 .cta:hover {
     background: #66A3A5;
-    color: var(--text-color-light);
 }
 
 .cta:active {
     background: #002123;
-    color: var(--text-color-light);
 }
 
 .cta-big {
     font-size: 1em;
     min-width: 260px;
     padding: 12px 10px;
-
 }
 
 .cta-execute {
     background: #F79E1B;
-    color: #04100D;
+    color: var(--text-color-execute);
 }
 
 .cta-execute:hover {
     background: #EEB765;
-    color: #04100D;
+    color: var(--text-color-execute);
 }
 
 .cta-execute:active {
     background: #533B18;
-    color: #04100D;
+    color: var(--text-color-execute);
+}
+
+button {
+    min-width: 134px;
+}
+
+.products-intro a {
+    color: var(--text-color-light);
+}
+
+.products-intro a:hover {
+    color: #A0CCD7;
+}
+
+.products-intro .active {
+    color: #89978C;
+    font-size: 1.5em;
+}
+
+.contact-info__item a {
+    text-transform: lowercase;
 }

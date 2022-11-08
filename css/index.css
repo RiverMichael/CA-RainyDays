@@ -12,8 +12,6 @@
     color: var(--text-color-light);
     text-transform: capitalize;
     position: absolute;
-    text-align: center;
-    font-size: 3em;
     top: 80px;
     left: 50%;
     transform: translateX(-50%);
@@ -21,22 +19,22 @@
     max-width: 450px;
 }
 
-.categories,
-.featured {
+.intro h1, .categories, .featured, .selling-points, .subscribe {
+    text-align: center;
+}
+
+.categories, .featured, .subscribe-form {
     display: flex;
+}
+
+.categories, .featured {
     flex-direction: column;
     margin: 50px 20px;
     max-width: 800px;
-    text-align: center;
 }
 
 .categories__item {
     padding: 20px 50px;
-}
-
-.featured__item {
-    padding: 20px;
-    margin: 50px;
 }
 
 .categories__item h2 {
@@ -58,7 +56,6 @@
     background-position: right;
     min-height: 50vh;
     color: var(--text-color-light);
-    text-align: center;
     position: relative;
 }
 
@@ -74,21 +71,15 @@
     margin-top: 70px;
 }
 
-.selling-points h2,
-.featured h2,
-.subscribe h2 {
-    font-size: 2em;
-}
-.categories > * {
-    flex: 1;
-}
-.featured > * {
+.categories, .featured > * {
     flex: 1;
 }
 
 .featured__item {
     border-radius: 8px;
     box-shadow: 0px 0px 20px var(--text-color-dark);
+    padding: 20px;
+    margin: 50px;
 }
 
 .featured h2 {
@@ -109,7 +100,6 @@
     min-height: 30vh;
     color: var(--text-color-light);
     padding: 50px 20px;
-    text-align: center;
 }
 
 .subscribe h2 {
@@ -117,11 +107,14 @@
 }
 
 .subscribe-form {
-    display: flex;
     justify-content: center;
     gap: 10px;
 }
 
 #email {
     opacity: 0.8;
+}
+
+#email:focus-visible {
+    opacity: 1;
 }

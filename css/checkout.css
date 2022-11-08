@@ -1,18 +1,14 @@
 /* CHECKOUT */
 
-.icon__info {
-    font-size: 1.2em;
-    cursor: help;
+.checkout-wrapper, .checkout-form__shipping, .checkout-form__payment, .form-input-small {
+    display: flex;
 }
 
-.checkout-form__action {
-    text-align: center;
-    margin-bottom: 70px;
+.checkout-wrapper, .checkout-form__shipping, .checkout-form__payment {
+    flex-direction: column;
 }
 
 .checkout-wrapper {
-    display: flex;
-    flex-direction: column;
     margin: 30px;
     border: 2px solid var(--text-color-dark);
     border-radius: 15px;
@@ -23,41 +19,36 @@
     background: var(--header-footer-color);
 }
 
-.checkout-form h1 {
-    text-align: center;
-    font-size: 3em;
+.checkout-form h1, .checkout-form h2 {
     margin: 0px;
+}
+
+.checkout-form h1, .checkout-form__action {
+    text-align: center;
 }
 
 .payment-cards img {
     width: 10%;
 }
 
-.checkout-form__shipping,
-.checkout-form__payment {
-    display: flex;
-    flex-direction: column;
+.checkout-form__shipping, .checkout-form__payment, .form-input-small {
     gap: 5px;
 }
 
-#city,
-#zipcode {
+#city, #zipcode {
     width: 50%;
 }
 
-#exp-date,
-#cvc {
+#exp-date, #cvc {
     width: 3.5em;
 }
 
 .checkout-form h2 {
     text-transform: uppercase;
     font-size: 1.2em;
-    margin: 0px;
 }
 
-#cvc-checkbox,
-.cvc-info {
+#cvc-checkbox, .cvc-info {
     display: none;
 }
 
@@ -68,24 +59,8 @@ color: #8C0909;
 text-transform: uppercase;
 }
 
-/* reference: https://stackoverflow.com/questions/3790935/can-i-hide-the-html5-number-input-s-spin-box */
-
-/* Firefox */
-input[type=number] {
-    -moz-appearance:textfield; 
-}
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 .form-input-small {
-    display: flex;
     align-items: flex-start;
-    gap: 5px;
 }
 
 .cvc-info img {
@@ -97,3 +72,11 @@ input::-webkit-inner-spin-button {
     font-weight: bold;
 }
 
+.icon__info {
+    font-size: 1.2em;
+    cursor: help;
+}
+
+.checkout-form__action {
+    margin-bottom: 70px;
+}
