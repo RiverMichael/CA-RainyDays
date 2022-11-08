@@ -58,3 +58,9 @@
 .product-thumbnail:hover {
     border: 2px solid var(--text-color-dark);
 }
+
+fieldset {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}

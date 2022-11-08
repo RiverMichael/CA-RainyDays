@@ -101,47 +101,50 @@
           <p class="product-details__price">€ 150</p>
 
           <form action="shoppingbag.html" class="size-form">
-            <div class="size-form__select">
-              <div class="size">
-                <input
-                  type="radio"
-                  id="small"
-                  name="size"
-                  value="small"
-                  required
-                />
-                <label for="small">S</label>
+            <fieldset>
+              <legend class="visually-hidden">Size</legend>
+              <div class="size-form__select">
+                <div class="size">
+                  <input
+                    type="radio"
+                    id="small"
+                    name="size"
+                    value="small"
+                    required
+                  />
+                  <label for="small">S</label>
+                </div>
+                <div class="size">
+                  <input
+                    type="radio"
+                    id="medium"
+                    name="size"
+                    value="medium"
+                    required
+                  />
+                  <label for="medium">M</label>
+                </div>
+                <div class="size">
+                  <input
+                    type="radio"
+                    id="large"
+                    name="size"
+                    value="large"
+                    required
+                  />
+                  <label for="large">L</label>
+                </div>
+                <div class="size">
+                  <input
+                    type="radio"
+                    id="extralarge"
+                    name="size"
+                    value="extralarge"
+                  />
+                  <label for="extralarge">XL</label>
+                </div>
               </div>
-              <div class="size">
-                <input
-                  type="radio"
-                  id="medium"
-                  name="size"
-                  value="medium"
-                  required
-                />
-                <label for="medium">M</label>
-              </div>
-              <div class="size">
-                <input
-                  type="radio"
-                  id="large"
-                  name="size"
-                  value="large"
-                  required
-                />
-                <label for="large">L</label>
-              </div>
-              <div class="size">
-                <input
-                  type="radio"
-                  id="extralarge"
-                  name="size"
-                  value="extralarge"
-                />
-                <label for="extralarge">XL</label>
-              </div>
-            </div>
+            </fieldset>
             <div class="size-form__action">
               <button class="cta">Add to cart</button>
             </div>
