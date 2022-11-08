@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Don't stop! Proceed and join the journey and expand your comfort zone"
+    />
+    <title>RainyDays | Shopping bag</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/shoppingbag.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <label for="menu-checkbox"
+        ><iconify-icon icon="pajamas:hamburger"></iconify-icon
+      ></label>
+      <input type="checkbox" id="menu-checkbox" />
+      <a href="index.html"
+        ><img
+          src="images/logo.png"
+          alt="The logotype for Rainydays rainjackets"
+      /></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="shoppingbag-icon">
+        <a href="shoppingbag.html">
+          <iconify-icon icon="clarity:shopping-bag-solid"></iconify-icon
+        ></a>
+      </div>
+    </header>
+
+    <main class="shoppingbag">
+      <a href="#" onclick="history.back();">
+        <iconify-icon icon="bi:x-circle" class="icon__back"></iconify-icon
+      ></a>
+
+      <section class="shoppingbag__card">
+        <h1>Shopping bag</h1>
+        <div class="shoppingbag-item">
+          <div class="shoppingbag-item__image">
+            <a href="product-page.html"
+              ><img
+                src="images/products/xlr-24.png"
+                alt="the rainjacket xlr 24"
+                class="product__image"
+            /></a>
+          </div>
+          <div class="shoppingbag-item__info">
+            <h2>XLR 24</h2>
+            <p>size L</p>
+          </div>
+          <div class="shoppingbag-item__price">
+            <p>€ 150</p>
+          </div>
+        </div>
+        <div class="shoppingbag-item">
+          <div class="shoppingbag-item__image">
+            <a href="product-page.html"
+              ><img
+                src="images/products/xlr-57.png"
+                alt="the rainjacket xlr 57"
+                class="product__image"
+            /></a>
+          </div>
+          <div class="shoppingbag-item__info">
+            <h2>XLR 57</h2>
+            <p>size XL</p>
+          </div>
+          <div class="shoppingbag-item__price">
+            <p>€ 150</p>
+          </div>
+        </div>
+        <div class="shoppingbag__total">
+          <h3>Total amount</h3>
+          <p class="total-price">€ 300</p>
+        </div>
+      </section>
+
+      <div class="shoppingbag__action">
+        <a href="checkout.html" class="cta cta-big cta-execute"
+          >Proceed to checkout</a
+        >
+      </div>
+    </main>
+
+    <footer>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

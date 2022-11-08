@@ -1,0 +1,159 @@
+@import "../css/import/variables.css";
+@import "../css/import/links.css";
+
+body {
+    background: var(--background-color);
+    font-family: var(--text-paragraph);
+    color: var(--text-color-dark);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin: 0px;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: var(--text-heading);
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+img {
+    width: 100%;
+}
+
+iconify-icon {
+    font-size: 2em;
+    color: var(--text-color-dark);
+}
+
+.icon__back {
+    margin: 30px 30px 0px;
+}
+
+header, footer {
+    background: var(--header-footer-color);
+    color: var(--text-color-dark);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    border-bottom: 0.5px solid var(--text-color-dark);
+}
+
+header img {
+    width: 150px;
+ }
+
+ .header-checkout {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    border-top: 0.5px solid var(--text-color-dark);
+}
+
+.shoppingbag-icon {
+    justify-self: right;
+}
+
+#menu-checkbox {
+    display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+    display: block;
+}
+
+nav ul, footer ul {
+    padding: 0px;
+}
+
+nav ul {
+    margin: 0px;
+}
+
+nav li {
+    font-weight: bold;
+    font-size: 1.2em;
+    display: block;
+    padding: 20px;
+}
+
+nav {
+    background: var(--header-footer-color);
+    top: 115px;
+    left: 0px;
+    padding: 0px 20px;
+    z-index: 1000;
+    position: absolute;
+    display: none;
+    border-radius: 0px 0px 15px 0px;
+}
+
+footer ul {
+    text-align: center;
+}
+
+footer li {
+    font-size: 0.8em;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0px 20px;
+}
+
+input {
+    background: var(--background-color);
+    border: 1px solid var(--text-color-dark);
+    border-radius: 8px;
+    padding: 10px;
+    color: var(--text-color-dark);
+}
+
+input:hover {
+    box-shadow: 0px 0px 5px var(--text-color-dark);
+}
+
+input:focus-visible {
+    outline: none;
+    box-shadow: 0px 0px 5px var(--text-color-dark);
+    background: #fff;
+}
+
+.visually-hidden {
+    border-width: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* reference: https://stackoverflow.com/questions/3790935/can-i-hide-the-html5-number-input-s-spin-box */
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance:textfield; 
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
