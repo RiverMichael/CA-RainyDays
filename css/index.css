@@ -62,7 +62,7 @@
     position: relative;
 }
 
-.selling-points__text {
+.selling-points-wrapper {
     position: absolute;
     top: 65px;
     left: 50%;

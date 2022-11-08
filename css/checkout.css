@@ -10,7 +10,7 @@
     margin-bottom: 70px;
 }
 
-.checkout-form {
+.checkout-wrapper {
     display: flex;
     flex-direction: column;
     margin: 30px;
@@ -18,7 +18,7 @@
     border-radius: 15px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 20px;
-    gap: 20px;
+    gap: 40px;
     max-width: 400px; 
     background: var(--header-footer-color);
 }
@@ -82,7 +82,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.input__small {
+.form-input-small {
     display: flex;
     align-items: flex-start;
     gap: 5px;
@@ -92,7 +92,7 @@ input::-webkit-inner-spin-button {
     width: 4em;
 }
 
-.cvc-info p {
+.cvc-info {
     margin-bottom: 0px;
     font-weight: bold;
 }

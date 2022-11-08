@@ -86,7 +86,7 @@ nav li {
 
 nav {
     background: var(--header-footer-color);
-    top: 105px;
+    top: 115px;
     left: 0px;
     padding: 0px 20px;
     z-index: 1000;

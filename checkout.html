@@ -36,118 +36,123 @@
         ></iconify-icon>
       </a>
 
-      <form action="checkout-success.html">
-        <section class="checkout-form">
-          <h1>Checkout</h1>
-          <div class="checkout-form__shipping">
-            <h2>Shipping information</h2>
-            <label class="visually-hidden" for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Name"
-              required
-            />
-            <label class="visually-hidden" for="adress">Adress</label>
-            <input
-              type="text"
-              id="adress"
-              name="adress"
-              placeholder="Adress"
-              required
-            />
-            <div class="input__small">
-              <label class="visually-hidden" for="zipcode">Zipcode</label>
-              <input
-                type="number"
-                inputmode="numeric"
-                id="zipcode"
-                name="zipcode"
-                placeholder="Zip Code"
-                required
-              />
-              <label class="visually-hidden" for="city">City</label>
+      <section class="checkout-form">
+        <form action="checkout-success.html">
+          <div class="checkout-wrapper">
+            <h1>Checkout</h1>
+            <section class="checkout-form__shipping">
+              <h2>Shipping information</h2>
+              <label class="visually-hidden" for="name">Name</label>
               <input
                 type="text"
-                id="city"
-                name="city"
-                placeholder="City"
+                id="name"
+                name="name"
+                placeholder="Name"
                 required
               />
-            </div>
-            <label class="visually-hidden" for="country">Country</label>
-            <input
-              type="text"
-              id="country"
-              name="country"
-              placeholder="Country"
-              required
-            />
+              <label class="visually-hidden" for="adress">Adress</label>
+              <input
+                type="text"
+                id="adress"
+                name="adress"
+                placeholder="Adress"
+                required
+              />
+              <div class="form-input-small">
+                <label class="visually-hidden" for="zipcode">Zipcode</label>
+                <input
+                  type="number"
+                  inputmode="numeric"
+                  id="zipcode"
+                  name="zipcode"
+                  placeholder="Zip Code"
+                  required
+                />
+                <label class="visually-hidden" for="city">City</label>
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  placeholder="City"
+                  required
+                />
+              </div>
+              <label class="visually-hidden" for="country">Country</label>
+              <input
+                type="text"
+                id="country"
+                name="country"
+                placeholder="Country"
+                required
+              />
+            </section>
+
+            <section class="checkout-form__payment">
+              <h2>Payment information</h2>
+              <div class="payment-cards">
+                <img src="images/visa_icon.svg" />
+                <img src="images/mastercard_icon.svg" />
+              </div>
+              <label class="visually-hidden" for="card-name"
+                >Cardholders Name</label
+              >
+              <input
+                type="text"
+                id="card-name"
+                name="card-name"
+                placeholder="Cardholders Name"
+                required
+              />
+              <label class="visually-hidden" for="card-number"
+                >Cardnumber</label
+              >
+              <input
+                type="number"
+                inputmode="numeric"
+                id="card-number"
+                name="card-number"
+                placeholder="Cardnumber"
+                required
+              />
+              <div class="form-input-small">
+                <label class="visually-hidden" for="exp-date">MmYy</label>
+                <input
+                  type="number"
+                  inputmode="numeric"
+                  id="exp-date"
+                  name="exp-date"
+                  placeholder="Mm/Yy"
+                  required
+                />
+                <label class="visually-hidden" for="cvc">Cvc</label>
+                <input
+                  type="number"
+                  inputmode="numeric"
+                  id="cvc"
+                  name="cvc"
+                  placeholder="Cvc"
+                  required
+                />
+                <label for="cvc-checkbox">
+                  <iconify-icon
+                    icon="emojione-monotone:information"
+                    class="icon__info"
+                  ></iconify-icon
+                ></label>
+                <input type="checkbox" id="cvc-checkbox" />
+                <div class="cvc-info">
+                  <p>the 3 digit number on the back of the card</p>
+                  <img src="images/cvc_icon.svg" />
+                </div>
+              </div>
+            </section>
           </div>
 
-          <div class="checkout-form__payment">
-            <h2>Payment information</h2>
-            <div class="payment-cards">
-              <img src="images/visa_icon.svg" />
-              <img src="images/mastercard_icon.svg" />
-            </div>
-            <label class="visually-hidden" for="card-name"
-              >Cardholders Name</label
-            >
-            <input
-              type="text"
-              id="card-name"
-              name="card-name"
-              placeholder="Cardholders Name"
-              required
-            />
-            <label class="visually-hidden" for="card-number">Cardnumber</label>
-            <input
-              type="number"
-              inputmode="numeric"
-              id="card-number"
-              name="card-number"
-              placeholder="Cardnumber"
-              required
-            />
-            <div class="input__small">
-              <label class="visually-hidden" for="exp-date">MmYy</label>
-              <input
-                type="number"
-                inputmode="numeric"
-                id="exp-date"
-                name="exp-date"
-                placeholder="Mm/Yy"
-                required
-              />
-              <label class="visually-hidden" for="cvc">Cvc</label>
-              <input
-                type="number"
-                inputmode="numeric"
-                id="cvc"
-                name="cvc"
-                placeholder="Cvc"
-                required
-              />
-              <label for="cvc-checkbox">
-                <iconify-icon
-                  icon="emojione-monotone:information"
-                  class="icon__info"
-                ></iconify-icon
-              ></label>
-              <input type="checkbox" id="cvc-checkbox" />
-              <div class="cvc-info">
-                <p>the 3 digit number on the back of the card</p>
-                <img src="images/cvc_icon.svg" />
-              </div>
-            </div>
+          <div class="checkout-form__action">
+            <button class="cta cta-big cta-execute">Complete purchase</button>
           </div>
-        </section>
-        <div class="checkout-form__action">
-          <button class="cta cta-big cta-execute">Complete purchase</button>
-        </div>
-      </form>
+        </form>
+      </section>
     </main>
 
     <footer></footer>

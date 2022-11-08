@@ -63,7 +63,7 @@
 @media (min-width: 500px) {
 
     .shoppingbag__card,
-    .checkout-form {
+    .checkout-wrapper {
         margin: 30px auto;
     }
 
@@ -116,7 +116,7 @@
         background-position-y: -1000px;
     }
 
-    .subscribe-success__text {
+    .subscribe-success-content {
         top: 15vh;
     }
 } 
