@@ -5,7 +5,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/intro.jpg);
     min-height: 50vh;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
 }
 
 .intro h1 {
