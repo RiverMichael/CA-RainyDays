@@ -4,8 +4,8 @@ This is my course assignment for the course in HTML/CSS at Noroff.
 
 ## Description
 
-The assignment was to build a responsive website using html and css based on the design we made in the course Design1.
-Link to the design: https://www.figma.com/file/jQUUUyH8iHJmAXO375aD4N/RainyDays
+The assignment was to build a responsive website using html and css based on the prototype we made in the course Design1.
+Link to the prototype: https://www.figma.com/file/jQUUUyH8iHJmAXO375aD4N/RainyDays
 
 ### Changes made from prototype to finished website
 
