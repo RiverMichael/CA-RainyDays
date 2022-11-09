@@ -6,7 +6,7 @@ This is my course assignment for the course in HTML/CSS at Noroff.
 
 The assignment was to build a responsive web-site using html and css based on the design we made in the course Design1.
 
-## Link to the finished web-site
+### Link to the finished web-site
 
 https://ca-rainydays-rivermichael.netlify.app/
 
