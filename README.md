@@ -9,7 +9,7 @@ Link to the prototype: https://www.figma.com/file/jQUUUyH8iHJmAXO375aD4N/RainyDa
 
 ### Changes made from prototype to finished website
 
-- On the homepage I decided to put the categories and bestseller images in a coloumn instead of in a row on smaller screen sizes. This was done to be able to have bigger images and make it more user firendly.
+- On the homepage I decided to put the categories and bestseller images in a coloumn instead of a row on smaller screen sizes. This was done to be able to have bigger images and make it more user firendly.
 
 - I added a "card effect" to the items in the bestseller categorie on the homepage, and also as a hover effect to the products on the product page.
 
@@ -17,7 +17,7 @@ Link to the prototype: https://www.figma.com/file/jQUUUyH8iHJmAXO375aD4N/RainyDa
 
 - I decided to change the colors on the checkout-card to make it look more like a card popping up.
 
-- I added a footer on all screen sizes instead of only on the mobile version as was suggested on my feedback in the design course.
+- I added a footer on all screen sizes instead of only on the mobile version, as was suggested in the feedback from the design course.
 
 ### Link to the finished website
 
