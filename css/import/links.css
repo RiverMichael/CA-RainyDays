@@ -66,17 +66,21 @@ button {
     min-width: 134px;
 }
 
-.products-intro a {
+.categories__link {
+    font-size: 1.5em;
+    font-family: var(--text-heading);
+    font-weight: bold;
+    color: var(--text-color-dark);
+}
+
+.products-intro__link {
     color: var(--text-color-light);
 }
 
-.products-intro a:hover {
-    color: #A0CCD7;
-}
-
-.products-intro .active {
+.products-intro__active {
     color: #89978C;
     font-size: 1.5em;
+    text-decoration: underline;
 }
 
 .contact-info__item a {
