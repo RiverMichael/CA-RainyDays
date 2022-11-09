@@ -1,40 +1,17 @@
-# Project Title
+# CA HTML/CSS - RainyDays
 
-A simple overview of use/purpose.
+This is my course assignment for the course in HTML/CSS at Noroff.
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+The assignment was to build a responsive web-site using html and css based on the design we made in the course Design1.
 
-## Getting Started
+### Link to the finished web-site
 
-### Dependencies
+https://ca-rainydays-rivermichael.netlify.app/
 
-- Describe any prerequisites, libraries, OS version, etc., needed before installing the program.
-- ex. Windows 10
+#### Authors
 
-### Installing
+Michael Nilsson - Front-End Development student at Noroff Aug22FT
 
-- How/where to download your program
-- Any modifications needed to be made to files/folders
-
-### Executing program
-
-- hosted link
-
-OR
-
-- How to run the program
-- Step-by-step bullets
-
-code blocks for commands
-
-## Help
-
-Any advice for common problems or issues.
-
-- command to run if the program contains helper info
-
-## Authors
-
-Contributors' names and contact info
+https://github.com/RiverMichael
