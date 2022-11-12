@@ -133,6 +133,8 @@ input:focus-visible {
     background: #fff;
 }
 
+/* reference: https://css-tricks.com/html-inputs-and-labels-a-love-story/ */
+
 .visually-hidden {
     border-width: 0;
     clip: rect(1px, 1px, 1px, 1px);

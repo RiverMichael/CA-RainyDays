@@ -2,7 +2,7 @@
 
 .intro {
     position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/intro.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/intro.jpg); /* reference: https://css-tricks.com/tinted-images-multiple-backgrounds/ */
     min-height: 50vh;
     background-size: cover;
     background-position: center;
