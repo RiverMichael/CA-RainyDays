@@ -3,7 +3,7 @@
 .subscribe-success {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/road-to-the-journey.jpg);
     background-size: cover;
-    background-position: center bottom;
+    background-position: center 60%;
     position: relative;
     text-align: center;
     color: var(--text-color-light);

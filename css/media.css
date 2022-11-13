@@ -21,10 +21,6 @@
         display: inline-block;
         padding: 0px 10px;
     }
-    
-    .intro {
-        background-position: center top;
-    }
 
     .categories, .featured, .contact, .product {
         flex-direction: row;
@@ -60,17 +56,12 @@
 
 @media (min-width: 900px) {
 
-    .intro {
-        background-position-y: -40px;
-    }
-
     .product-list {
         grid-template-columns: repeat(3, 1fr);
     }
 
     .products-intro {
         min-height: 35vh;
-        background-position-y: -100px;
     }
 
     .products-intro h1 {
@@ -91,14 +82,6 @@
 
     .product-list {
         margin: 50px auto;
-    }
-
-    .products-intro {
-        background-position-y: -200px;
-    }
-
-    .subscribe-success {
-        background-position-y: -1000px;
     }
 
     .subscribe-success-content {

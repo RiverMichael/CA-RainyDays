@@ -1,10 +1,10 @@
 /* PRODUCTS PAGE */
 
 .products-intro {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/men.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/men-intro.jpg);
     min-height: 30vh;
     background-size: cover; 
-    background-position: center top;
+    background-position: center 20%;
     text-align: center;
     position: relative;
 }
