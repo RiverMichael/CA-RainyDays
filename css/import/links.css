@@ -35,10 +35,12 @@ a:active {
 
 .cta:hover {
     background: #66A3A5;
+    color: var(--text-color-light);
 }
 
 .cta:active {
     background: #002123;
+    color: var(--text-color-light);
 }
 
 .cta-big {
