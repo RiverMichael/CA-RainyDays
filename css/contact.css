@@ -45,6 +45,12 @@
     margin: 20px;
 }
 
+.contact-info h1 {
+    font-size: 2em;
+    margin: 0px;
+    text-transform: capitalize;
+}
+
 .contact-info p {
     margin: 0px;
 }
