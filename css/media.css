@@ -1,3 +1,10 @@
+@media (min-width: 500px) {
+
+    .shoppingbag__card, .checkout-wrapper {
+        margin: 30px auto;
+    }
+}
+
 @media (min-width: 600px) {
 
     header label {
@@ -44,13 +51,6 @@
 
     .product {
         margin: 30px auto 50px;
-    }
-}
-
-@media (min-width: 500px) {
-
-    .shoppingbag__card, .checkout-wrapper {
-        margin: 30px auto;
     }
 }
 
