@@ -71,6 +71,7 @@
 
 .product__image {
     max-height: 100px;
+    width: 50px;
 }
 
 .shoppingbag-container {
