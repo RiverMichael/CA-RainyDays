@@ -8,10 +8,10 @@ iconArrowLeft.addEventListener("click", function() {
     history.back();
 });
 
-const shoppingbagContainer = document.querySelector(".shoppingbag__card-wrapper");
-const itemsContainer = document.querySelector(".shoppingbag__wrapper");
+const shoppingbagContainer = document.querySelector(".shoppingcart__card-wrapper");
+const itemsContainer = document.querySelector(".shoppingcart__wrapper");
 const totalPriceContainer = document.querySelector(".total-price__span");
-const checkoutButton = document.querySelector(".shoppingbag__action a");
+const checkoutButton = document.querySelector(".shoppingcart__action a");
 checkoutButton.style.display = "none";
 
 const cartItems = getCartItems();
@@ -33,7 +33,7 @@ getShoppingBag();
 
 function renderShoppingbagItems(items, parentElement) {
     if (items.length === 0) {
-        parentElement.innerText = "There is no item in your shoppingbag";
+        parentElement.innerText = "There is no item in your shopping cart";
     } else {
         items.forEach((item) => {
             createShoppingBagHtml(item, parentElement);  
@@ -50,12 +50,13 @@ function getTotalPrice(items, parentElement) {
     })
 };
 
+
 function removeCartItem() {
     const removeItemButton = document.querySelectorAll(".remove-item");
 
     removeItemButton.forEach((button) => {
         button.addEventListener("click", function() {
-        const itemContainer = button.closest(".shoppingbag-item");
+        const itemContainer = button.closest(".shoppingcart-item");
         const itemName = itemContainer.querySelector("h2").innerText;
         const itemSize = itemContainer.querySelector("p").innerText;
         const removeItem = cartItems.find((item) => item.name === itemName) && cartItems.find((item) => item.size === itemSize);
@@ -66,6 +67,7 @@ function removeCartItem() {
         itemContainer.remove();
         
         totalPrice -= removeItem.price;
+
         window.location.reload();
     });
 });

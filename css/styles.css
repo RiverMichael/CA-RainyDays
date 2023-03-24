@@ -65,7 +65,7 @@ header img {
     justify-content: center;
 }
 
-.shoppingbag-icon {
+.shoppingcart-icon {
     justify-self: right;
     position: relative;
 }
@@ -190,11 +190,6 @@ input::-webkit-inner-spin-button {
     text-align: center;
     width: min(100% - 50px, 600px);
     font-size: 1.2rem;
-}
-
-.success {
-    color: var(--clr-success);
-    border: 2px solid var(--clr-success);
 }
 
 .message {

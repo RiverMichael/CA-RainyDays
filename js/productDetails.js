@@ -58,7 +58,7 @@ function addToCart(event) {
     clearHtml(sizeFormValidation);
 
     if (itemSize) {
-        createMessage(sizeFormValidation, "success", `You added one ${itemName} rainjacket size ${itemSize} to your shopping bag`);
+        createMessage(sizeFormValidation, "success", `You added one ${itemName} rainjacket size ${itemSize} to your shopping cart`);
         cartItems.push(item);
         saveCart(cartItems);
         const displayIfItemInCart = document.querySelector(".circle");

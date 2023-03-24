@@ -150,11 +150,11 @@ function createCheckoutSuccessActionButton(linkText, linkUrl) {
 
 // Create Shoppingbag Elements
 function createShoppingbagItem(children) {
-    return createHtmlElements("div", ["shoppingbag-item", "flex"], children);
+    return createHtmlElements("div", ["shoppingcart-item", "flex"], children);
 };
 
 function createShoppingbagImageContainer(children) {
-    return createHtmlElements("div", ["shoppingbag-item__image"], children);
+    return createHtmlElements("div", ["shoppingcart-item__image"], children);
 };
 
 function createShoppingbagItemLink(linkUrl, children) {
@@ -166,11 +166,11 @@ function createShoppingbagItemImage(image, altText) {
 };
 
 function createShoppingbagItemDetails(children) {
-    return createHtmlElements("div", ["shoppingbag-details", "flex"], children);
+    return createHtmlElements("div", ["shoppingcart-details", "flex"], children);
 };
 
 function createShoppingbagItemInfo(children) {
-    return createHtmlElements("div", ["shoppingbag-item__info", "flex"], children);
+    return createHtmlElements("div", ["shoppingcart-item__info", "flex"], children);
 };
 
 function createShoppingbagItemTitle(titleText) {
@@ -182,7 +182,7 @@ function createShoppingbagItemSize(size) {
 };
 
 function createShoppingbagPriceContainer(children) {
-    return createHtmlElements("div", ["shoppingbag-item__price", "flex"], children);
+    return createHtmlElements("div", ["shoppingcart-item__price", "flex"], children);
 };
 
 function createShoppingbagItemPriceSymbol(priceSymbol) {
@@ -194,7 +194,7 @@ function createShoppingbagPrice(price) {
 };
 
 function createShoppingbagTotalPriceContainer(children) {
-    return createHtmlElements("div", ["shoppingbag__total"], children);
+    return createHtmlElements("div", ["shoppingcart__total"], children);
 };
 
 function createShoppingbagTotal(priceSymbol) {

@@ -24,15 +24,6 @@
     transition: all 0.3s;
 }
 
-.product-image:hover {
-    transform: scale(1.5);
-    cursor: zoom-in;
-    padding: 20px;
-    margin-top: 100px;
-    border: 2px solid var(--text-color-dark);
-    background: var(--background-color);
-}
-
 .product-thumbnails__image {
     height: 50px;
     width: 40px;
