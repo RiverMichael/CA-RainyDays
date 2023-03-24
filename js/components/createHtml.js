@@ -138,6 +138,7 @@ function createShoppingbagElements(item) {
 export function createCheckoutSuccessHtml(parentElement) {
     const checkoutSuccessHtml = createCheckoutSuccessElements();
     parentElement.append(checkoutSuccessHtml);
+    document.title = "RainyDays | Checkout Success";
 };
 
 function createCheckoutSuccessElements() {
