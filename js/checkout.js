@@ -48,7 +48,7 @@ function validateForm(event) {
 
     if (validateLength(name.value, 1)) {
         nameError.style.display = "none";
-        name.style.border = "1px solid var(--text-color-dark)";
+        name.style.border = "1px solid var(--clr-dark)";
     } else {
         nameError.style.display = "block";
         name.style.border = "2px solid var(--clr-error)";
@@ -57,7 +57,7 @@ function validateForm(event) {
 
     if (validateLength(adress.value, 1)) {
         adressError.style.display = "none";
-        adress.style.border = "1px solid var(--text-color-dark)";
+        adress.style.border = "1px solid var(--clr-dark)";
     } else {
         adressError.style.display = "block";
         adress.style.border = "2px solid var(--clr-error)";
@@ -66,7 +66,7 @@ function validateForm(event) {
 
     if (validateLength(zipcode.value, 1)) {
         zipcodeError.style.display = "none";
-        zipcode.style.border = "1px solid var(--text-color-dark)";
+        zipcode.style.border = "1px solid var(--clr-dark)";
     } else {
         zipcodeError.style.display = "block";
         zipcode.style.border = "2px solid var(--clr-error)";
@@ -75,7 +75,7 @@ function validateForm(event) {
 
     if (validateLength(city.value, 1)) {
         cityError.style.display = "none";
-        city.style.border = "1px solid var(--text-color-dark)";
+        city.style.border = "1px solid var(--clr-dark)";
     } else {
         cityError.style.display = "block";
         city.style.border = "2px solid var(--clr-error)";
@@ -84,7 +84,7 @@ function validateForm(event) {
 
     if (validateLength(country.value, 1)) {
         countryError.style.display = "none";
-        country.style.border = "1px solid var(--text-color-dark)";
+        country.style.border = "1px solid var(--clr-dark)";
     } else {
         countryError.style.display = "block";
         country.style.border = "2px solid var(--clr-error)";
@@ -93,7 +93,7 @@ function validateForm(event) {
 
     if (validateLength(cardname.value, 1)) {
         cardnameError.style.display = "none";
-        cardname.style.border = "1px solid var(--text-color-dark)";
+        cardname.style.border = "1px solid var(--clr-dark)";
     } else {
         cardnameError.style.display = "block";
         cardname.style.border = "2px solid var(--clr-error)";
@@ -102,7 +102,7 @@ function validateForm(event) {
 
     if (exactLength(cardnumber.value, 16)) {
         cardnumberError.style.display = "none";
-        cardnumber.style.border = "1px solid var(--text-color-dark)";
+        cardnumber.style.border = "1px solid var(--clr-dark)";
     } else {
         cardnumberError.style.display = "block";
         cardnumber.style.border = "2px solid var(--clr-error)";
@@ -111,7 +111,7 @@ function validateForm(event) {
 
     if (exactLength(expdate.value, 4)) {
         expdateError.style.display = "none";
-        expdate.style.border = "1px solid var(--text-color-dark)";
+        expdate.style.border = "1px solid var(--clr-dark)";
     } else {
         expdateError.style.display = "block";
         expdate.style.border = "2px solid var(--clr-error)";
@@ -120,7 +120,7 @@ function validateForm(event) {
 
     if (exactLength(cvc.value, 3)) {
         cvcError.style.display = "none";
-        cvc.style.border = "1px solid var(--text-color-dark)";
+        cvc.style.border = "1px solid var(--clr-dark)";
     } else {
         cvcError.style.display = "block";
         cvc.style.border = "2px solid var(--clr-error)";

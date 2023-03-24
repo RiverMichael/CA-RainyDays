@@ -2,7 +2,7 @@
 
 .checkout-wrapper {
     margin: 30px;
-    border: 2px solid var(--text-color-dark);
+    border: 2px solid var(--clr-dark);
     border-radius: 15px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 20px;
@@ -12,11 +12,11 @@
     margin-inline: auto;
 }
 
-.checkout h1, .checkoutform__action {
+.checkout h1, .checkoutform__action, .checkout-success {
     text-align: center;
 }
 
-.checkoutform__shipping, .checkoutform__payment, .form-input-small {
+.checkoutform__shipping, .checkoutform__payment, .form-input-small, .zipcode__wrapper, .city__wrapper, .expdate-container, .cvc-container, .cvc__wrapper {
     gap: 5px;
 }
 
@@ -27,11 +27,6 @@
 .zipcode__wrapper, .city__wrapper {
     width: 50%;
 }
-
-.zipcode__wrapper, .city__wrapper, .expdate-container, .cvc-container {
-    gap: 5px;
-}
-
 #expdate, #cvc {
     width: 4em;
 }
@@ -47,7 +42,6 @@
 
 .cvc__wrapper {
     flex-direction: row;
-    gap: 5px;
 }
 
 .cvc__wrapper iconify-icon {
@@ -56,11 +50,11 @@
 }
 
 .cvc-info {
-display: none;
-font-size: 0.8em;
-color: #8C0909;
-text-transform: uppercase;
-font-weight: bold;
+    display: none;
+    font-size: 0.8em;
+    color: #8C0909;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .form-input-small {
@@ -96,9 +90,8 @@ font-weight: bold;
 .checkout-success {
     width: min(100% - 100px, 1000px);
     margin-inline: auto;
-    text-align: center;
     gap: 50px;
-    color: var(--text-color-light);
+    color: var(--clr-light);
 }
 
 .checkout-success__text {

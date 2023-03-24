@@ -7,9 +7,9 @@
 }
 
 body {
-    background: var(--background-color);
+    background: var(--clr-background);
     font-family: var(--text-paragraph);
-    color: var(--text-color-dark);
+    color: var(--clr-dark);
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
@@ -23,7 +23,7 @@ h1 {
     font-size: 3em;
 }
 
-h2 {
+h2, iconify-icon {
     font-size: 2em;
 }
 
@@ -32,8 +32,7 @@ img {
 }
 
 iconify-icon {
-    font-size: 2em;
-    color: var(--text-color-dark);
+    color: var(--clr-dark);
 }
 
 .icon__back {
@@ -41,8 +40,8 @@ iconify-icon {
 }
 
 header, footer {
-    background: var(--background-color);
-    color: var(--text-color-dark);
+    background: var(--clr-background);
+    color: var(--clr-dark);
 }
 
 header {
@@ -104,7 +103,7 @@ nav {
     position: absolute;
     display: none;
     border-radius: 0px 0px 15px 0px;
-    background: var(--background-color);
+    background: var(--clr-background);
 }
 
 footer ul {
@@ -126,24 +125,22 @@ footer p {
 }
 
 input {
-    background: var(--background-color);
-    border: 1px solid var(--text-color-dark);
+    background: var(--clr-background);
+    border: 1px solid var(--clr-dark);
     border-radius: 8px;
     padding: 10px;
-    color: var(--text-color-dark);
+    color: var(--clr-dark);
 }
 
 input:hover {
-    box-shadow: 0px 0px 5px var(--text-color-dark);
+    box-shadow: 0px 0px 5px var(--clr-dark);
 }
 
 input:focus-visible {
     outline: none;
-    box-shadow: 0px 0px 5px var(--text-color-dark);
+    box-shadow: 0px 0px 5px var(--clr-dark);
     background: #fff;
 }
-
-/* reference: https://css-tricks.com/html-inputs-and-labels-a-love-story/ */
 
 .visually-hidden {
     border-width: 0;
@@ -155,8 +152,6 @@ input:focus-visible {
     white-space: nowrap;
     width: 1px;
 }
-
-/* reference: https://stackoverflow.com/questions/3790935/can-i-hide-the-html5-number-input-s-spin-box */
 
 /* Firefox */
 input[type=number] {

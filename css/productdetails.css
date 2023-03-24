@@ -16,7 +16,7 @@
     gap: 50px;
 }
 
-.product-images__wrapper {
+.product-images__wrapper, .product-details {
     gap: 20px;
 }
 
@@ -28,7 +28,7 @@
     height: 50px;
     width: 40px;
     padding: 2px;
-    border: 2px solid var(--text-color-dark);
+    border: 2px solid var(--clr-dark);
     transition: transform 0.25s;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .product-thumbnails img:hover {
-    border: 2px solid var(--text-color-dark);
+    border: 2px solid var(--clr-dark);
     opacity: 1;
     transform: scale(1.5);
 }
@@ -54,10 +54,6 @@
 
 .product-thumbnails, .size-form__select {
     gap: 10px;
-}
-
-.product-details {
-    gap: 20px;
 }
 
 #size-form {

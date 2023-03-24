@@ -1,5 +1,4 @@
 const cartItems = localStorage.getItem("cartItems");
-const displayIfItemInCart = document.querySelector(".circle");
 
 export function getCartItems() {
     if (cartItems === null) {

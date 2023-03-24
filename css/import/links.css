@@ -1,7 +1,7 @@
 a {
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--button-background-color);
+    color: var(--clr-button-background);
 }
 
 a:hover {
@@ -9,7 +9,7 @@ a:hover {
 }
 
 a:active {
-    color: var(--text-color-dark)
+    color: var(--clr-dark)
 }
 
 nav ul:hover a, footer ul:hover a {
@@ -18,13 +18,15 @@ nav ul:hover a, footer ul:hover a {
 
 nav ul a:hover, footer ul a:hover {
     opacity: 1;
-    color: var(--button-background-color);
+    color: var(--clr-button-background);
 }
 
 .active {
     color: #656E67;
-    text-decoration:
-     underline;
+}
+
+.active, .products-intro__active {
+    text-decoration: underline;
 }
 
 .link {
@@ -34,8 +36,8 @@ nav ul a:hover, footer ul a:hover {
 .cta {
     font-family: var(--text-heading);
     display: inline-block;
-    background: var(--button-background-color);
-    color: var(--text-color-light);
+    background: var(--clr-button-background);
+    color: var(--clr-light);
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -49,12 +51,14 @@ nav ul a:hover, footer ul a:hover {
 
 .cta:hover {
     background: #66A3A5;
-    color: var(--text-color-light);
+}
+
+.cta:hover, .cta:active, .products-intro__link {
+    color: var(--clr-light);
 }
 
 .cta:active {
     background: #002123;
-    color: var(--text-color-light);
 }
 
 .cta-big {
@@ -63,19 +67,20 @@ nav ul a:hover, footer ul a:hover {
     padding: 12px 10px;
 }
 
+.cta-execute, .cta-execute:hover, .cta-execute:active {
+    color: var(--clr-execute);
+}
+
 .cta-execute {
     background: #F79E1B;
-    color: var(--text-color-execute);
 }
 
 .cta-execute:hover {
     background: #EEB765;
-    color: var(--text-color-execute);
 }
 
 .cta-execute:active {
     background: #533B18;
-    color: var(--text-color-execute);
 }
 
 button {
@@ -86,17 +91,12 @@ button {
     font-size: 1.5em;
     font-family: var(--text-heading);
     font-weight: bold;
-    color: var(--text-color-dark);
-}
-
-.products-intro__link {
-    color: var(--text-color-light);
+    color: var(--clr-dark);
 }
 
 .products-intro__active {
     color: #89978C;
     font-size: 1.5em;
-    text-decoration: underline;
 }
 
 .contact-info__item a {

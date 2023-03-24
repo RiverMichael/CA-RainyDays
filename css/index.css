@@ -6,12 +6,15 @@
     min-height: 50vh;
     background-size: cover;
     background-position: center top;
-    align-items: center;
+}
+
+.intro, .selling-points, .subscribe-form {
     justify-content: center;
+    align-items: center;
 }
 
 .intro h1 {
-    color: var(--text-color-light);
+    color: var(--clr-light);
     text-transform: capitalize;
 }
 
@@ -37,7 +40,7 @@
 }
    
 .categories-image:hover {
-    box-shadow: 0px 0px 10px var(--text-color-dark);
+    box-shadow: 0px 0px 10px var(--clr-dark);
 }    
 
 .selling-points {
@@ -45,27 +48,26 @@
     background-size: cover;
     background-position: right;
     min-height: 50vh;
-    color: var(--text-color-light);
+    color: var(--clr-light);
     position: relative;
-    align-items: center;
-    justify-content: center;
     gap: 50px;
 }
 
-.selling-points-wrapper {
-    /* width: 330px; */
+.selling-points-wrapper, .featured__item, .subscribe-form {
     gap: 20px;
 }
 
 .featured {
     padding-block: 100px;
+}
+
+.featured, .subscribe__wrapper {
     gap: 50px;
 }
 
 .featured__item {
     border-radius: 8px;
     padding: 50px;
-    gap: 20px;
 }
 
 .featured h2 {
@@ -83,23 +85,13 @@
     background-size: cover;
     background-position: center;
     min-height: 30vh;
-    color: var(--text-color-light);
+    color: var(--clr-light);
     padding-block: 50px;
     justify-content: center;
 }
 
 .subscribe h2 {
     font-size: 2rem;
-}
-
-.subscribe__wrapper {
-    gap: 50px;
-}
-
-.subscribe-form {
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
 }
 
 .subscribe-form__wrapper {

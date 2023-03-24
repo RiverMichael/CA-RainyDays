@@ -18,7 +18,7 @@
 
 .contact img {
     border-radius: 50%;
-    border: 2px solid var(--text-color-dark);
+    border: 2px solid var(--clr-dark);
 }
 
 .contact-info {
