@@ -69,6 +69,10 @@ header img {
     position: relative;
 }
 
+.shoppingcart-icon iconify-icon:hover {
+    color: #A0CCD7;
+}
+
 .circle {
     display: none;
     background-color: #ef0404;
