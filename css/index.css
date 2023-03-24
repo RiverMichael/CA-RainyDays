@@ -2,10 +2,10 @@
 
 .intro {
     position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/intro.jpg); /* reference: https://css-tricks.com/tinted-images-multiple-backgrounds/ */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/forest-bridge.jpg);
     min-height: 50vh;
     background-size: cover;
-    background-position: center top;
+    background-position: center bottom;
 }
 
 .intro, .selling-points, .subscribe-form {
