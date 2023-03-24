@@ -16,7 +16,7 @@
     text-align: center;
 }
 
-.checkoutform__shipping, .checkoutform__payment, .form-input-small, .zipcode__wrapper, .city__wrapper, .expdate-container, .cvc-container, .cvc__wrapper {
+.checkoutform__shipping, .checkoutform__payment, .zipcode__wrapper, .city__wrapper, .expdate-container, .cvc-container, .cvc__wrapper {
     gap: 5px;
 }
 
@@ -27,6 +27,7 @@
 .zipcode__wrapper, .city__wrapper {
     width: 50%;
 }
+
 #expdate, #cvc {
     width: 4em;
 }
@@ -53,13 +54,13 @@
     display: none;
     font-size: 0.8em;
     color: #8C0909;
-    text-transform: uppercase;
     font-weight: bold;
 }
 
 .form-input-small {
     display: flex;
     align-items: flex-start;
+    gap: 20px;
 }
 
 .cvc-info img {
@@ -75,6 +76,8 @@
     color: var(--clr-error);
     display: none;
     font-weight: 700;
+    padding-bottom: 10px;
+    /* margin-right: 20px; */
 }
 
 .checkout-success__wrapper {

@@ -7,18 +7,6 @@ iconArrowLeft.addEventListener("click", function() {
     history.back();
 });
 
-const cvcInfoIcon = document.querySelector(".icon__info");
-cvcInfoIcon.addEventListener("click", toggleCvcInfo);
-
-function toggleCvcInfo() {
-    const cvcInfo = document.querySelector(".cvc-info");
-    if (cvcInfo.style.display !== "inline-block") {
-        cvcInfo.style.display = "inline-block";
-    } else {
-        cvcInfo.style.display = "none";
-    }
-};
-
 const form = document.querySelector("#checkoutform");
 const name = document.querySelector("#name");
 const nameError = document.querySelector("#name-error");

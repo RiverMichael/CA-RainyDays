@@ -124,8 +124,9 @@ footer li {
 
 footer p {
     text-align: center;
-    font-size: 0.7em;
+    font-size: 0.9em;
     font-family: var(--text-paragraph);
+    padding-block: 10px;
 }
 
 input {
