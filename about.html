@@ -17,8 +17,12 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/about.css" rel="stylesheet" />
     <link href="css/media.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
 
-    <!-- Hotjar Tracking Code for my site -->
+    <script defer src="js/components/toggleNavigation.js"></script>
+    <script defer src="js/components/showIfItemInCart.js"></script>
+
+    <!-- Hotjar Tracking Code for https://rainydays.rivermichael.dev -->
     <script>
       (function (h, o, t, j, a, r) {
         h.hj =
@@ -38,10 +42,7 @@
 
   <body>
     <header>
-      <label for="menu-checkbox"
-        ><iconify-icon icon="pajamas:hamburger"></iconify-icon
-      ></label>
-      <input type="checkbox" id="menu-checkbox" />
+      <iconify-icon id="hamburger" icon="pajamas:hamburger"></iconify-icon>
       <a href="index.html"
         ><img
           src="images/logo.png"
@@ -50,7 +51,8 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="men.html">Men</a></li>
           <li><a href="about.html" class="active">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -59,37 +61,48 @@
         <a href="shoppingbag.html" aria-label="Go to shoppingbag">
           <iconify-icon icon="clarity:shopping-bag-solid"></iconify-icon
         ></a>
+        <div class="circle"></div>
       </div>
     </header>
 
-    <main class="about">
-      <article class="about__story">
+    <main class="about flex">
+      <article class="about-story container flex">
         <h1>The story of Rainydays</h1>
-        <p>
-          Our journey started back in 2004 and when our founders Michael and
-          Joey had challenges with there equipment during a hike in the
-          foothills of mount Tibidabo in Spain.
-        </p>
-        <p>
-          After there trip thay started talking about what improvments you could
-          make to the equipment they used, especially the jackets.
-        </p>
-        <p>
-          Since Joey was working in product development and Michael worked in
-          marketing that conversation was the beginning to the journey of
-          RainyDays.
-        </p>
+        <div class="about-story__wrapper flex">
+          <p>
+            Our journey started back in 2004 and when our founders Michael and
+            Joey had challenges with there equipment during a hike in the
+            foothills of mount Tibidabo in Spain.
+          </p>
+          <p>
+            After there trip thay started talking about what improvments you
+            could make to the equipment they used, especially the jackets.
+          </p>
+          <p>
+            Since Joey was working in product development and Michael worked in
+            marketing that conversation was the beginning to the journey of
+            RainyDays.
+          </p>
+        </div>
+        <div class="about-action">
+          <a href="men.html" class="cta cta-big">Explore our products</a>
+        </div>
       </article>
-      <a href="products.html" class="cta cta-big">Explore our products</a>
     </main>
 
     <footer>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
+
         <li><a href="about.html" class="active">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <p>
+        Copyright &copy; 2023 |
+        <a href="https://www.michaelriver.dev" target="_blank"
+          >Michael Nilsson</a
+        >
+      </p>
     </footer>
   </body>
 </html>

@@ -1,20 +1,11 @@
 /* CONTACT PAGE */
 
-.contact, .contact-info, .contact-info__item {
-    display: flex;
+.contact {
+    padding-block: 50px;
 }
 
 .contact, .contact-info__item {
     align-items: center;
-}
-
-.contact, .contact-info {
-    flex-direction: column;
-}
-
-.contact {
-    margin: 50px 20px;
-    max-width: 800px;
 }
 
 .contact > * {
@@ -37,15 +28,13 @@
 
 .contact-info h1 {
     font-size: 2em;
-    margin: 0px;
     text-transform: capitalize;
 }
 
-.contact-info p {
-    margin: 0px;
+.contact-info__item {
+    display: flex;
 }
 
-.contact-info__item {
+.contact-info__content, .contact-info__item {
     gap: 5px;
-    margin-bottom: 5px;
 }

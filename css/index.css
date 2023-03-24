@@ -2,39 +2,30 @@
 
 .intro {
     position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/intro.jpg); /* reference: https://css-tricks.com/tinted-images-multiple-backgrounds/ */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/intro.jpg); /* reference: https://css-tricks.com/tinted-images-multiple-backgrounds/ */
     min-height: 50vh;
     background-size: cover;
     background-position: center top;
+    align-items: center;
+    justify-content: center;
 }
 
 .intro h1 {
     color: var(--text-color-light);
     text-transform: capitalize;
-    position: absolute;
-    top: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    min-width: 330px;
-    max-width: 450px;
 }
 
 .intro h1, .categories, .featured, .selling-points, .subscribe {
     text-align: center;
 }
 
-.categories, .featured, .subscribe-form {
-    display: flex;
-}
-
-.categories, .featured {
-    flex-direction: column;
-    margin: 50px 20px;
-    max-width: 800px;
+.categories {
+    padding-block: 100px;
+    gap: 100px;
 }
 
 .categories__item {
-    padding: 20px 50px;
+    gap: 10px;
 }
 
 .categories > *, .featured > * {
@@ -56,30 +47,29 @@
     min-height: 50vh;
     color: var(--text-color-light);
     position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 }
 
 .selling-points-wrapper {
-    position: absolute;
-    top: 65px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 330px;
+    /* width: 330px; */
+    gap: 20px;
 }
 
-.selling-points__action {
-    margin-top: 70px;
+.featured {
+    padding-block: 100px;
+    gap: 50px;
 }
 
 .featured__item {
     border-radius: 8px;
-    box-shadow: 0px 0px 20px var(--text-color-dark);
-    padding: 20px;
-    margin: 50px;
+    padding: 50px;
+    gap: 20px;
 }
 
 .featured h2 {
     flex: 1 0 100%;
-    margin: 0px;
 }
 
 .featured__item p {
@@ -88,22 +78,48 @@
     text-transform: uppercase;
 }
 
-.subscribe {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/subscribe.jpg);
+.subscribe-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/subscribe.jpg);
     background-size: cover;
     background-position: center;
     min-height: 30vh;
     color: var(--text-color-light);
-    padding: 50px 20px;
+    padding-block: 50px;
+    justify-content: center;
 }
 
 .subscribe h2 {
-    margin: 30px 0px 80px;
+    font-size: 2rem;
+}
+
+.subscribe__wrapper {
+    gap: 50px;
 }
 
 .subscribe-form {
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
+    align-items: center;
+}
+
+.subscribe-form__wrapper {
+    gap: 2px;
+}
+
+.subscribe-form input {
+    min-width: 250px;
+}
+
+.subscribe-form button {
+    height: 37.5px;
+}
+
+.subscribe-error {
+    color: #fa0b0b;
+    background: #000;
+    border-radius: 8px;
+    padding: 5px;
+    display: none;
 }
 
 #email {

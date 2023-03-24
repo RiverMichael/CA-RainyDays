@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Get in touch with us and we will get you in the right direction towards your next big adventure!"
+      content="Explore the rainjackets for women that you want for your next adventure, get out of your comfort zone today!"
     />
-    <title>RainyDays | Contact Us</title>
+    <title>RainyDays | Products | Women</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lato:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
     <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/contact.css" rel="stylesheet" />
+    <link href="css/products.css" rel="stylesheet" />
     <link href="css/media.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="images/logo.png" />
 
     <script defer src="js/components/toggleNavigation.js"></script>
     <script defer src="js/components/showIfItemInCart.js"></script>
+    <script defer type="module" src="js/productsPage.js"></script>
 
     <!-- Hotjar Tracking Code for https://rainydays.rivermichael.dev -->
     <script>
@@ -51,10 +52,10 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="women.html">Women</a></li>
+          <li><a href="women.html" class="active">Women</a></li>
           <li><a href="men.html">Men</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
       <div class="shoppingbag-icon">
@@ -65,41 +66,27 @@
       </div>
     </header>
 
-    <main class="contact container split">
-      <section class="contact-image">
-        <img
-          src="images/rainydays-hq.jpg"
-          alt="the entrance to Rainydays headquarters in Oslo"
-        />
+    <main>
+      <section class="products-intro women flex">
+        <ul>
+          <li class="products-intro__active" id="women">Women</li>
+          <li>
+            <a href="men.html" class="products-intro__link" id="men">Men</a>
+          </li>
+        </ul>
+        <h1>Jackets for women</h1>
       </section>
 
-      <section class="contact-info flex">
-        <h1>Contact us</h1>
-        <p>
-          Our headquarters are located in the heart of Oslo, Norway. You find us
-          on Brenneriveien in the charming area of Grünerløkka.
-        </p>
-        <div class="contact-info__content flex">
-          <div class="contact-info__item">
-            <iconify-icon icon="akar-icons:phone"></iconify-icon>
-            <p>+47 12345678</p>
-          </div>
-          <div class="contact-info__item">
-            <iconify-icon icon="ic:round-alternate-email"></iconify-icon>
-            <a href="mailto:contact@rainydays.com"
-              >contact&commat;rainydays.com</a
-            >
-          </div>
-        </div>
-      </section>
+      <div class="message"></div>
+
+      <section class="product-list"></section>
     </main>
 
     <footer>
       <ul>
         <li><a href="index.html">Home</a></li>
-
         <li><a href="about.html">About</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <p>
         Copyright &copy; 2023 |

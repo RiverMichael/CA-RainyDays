@@ -17,8 +17,13 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
     <link href="css/media.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
 
-    <!-- Hotjar Tracking Code for my site -->
+    <script defer src="js/components/toggleNavigation.js"></script>
+    <script defer src="js/components/showIfItemInCart.js"></script>
+    <script defer type="module" src="js/index.js"></script>
+
+    <!-- Hotjar Tracking Code for https://rainydays.rivermichael.dev -->
     <script>
       (function (h, o, t, j, a, r) {
         h.hj =
@@ -38,10 +43,7 @@
 
   <body>
     <header>
-      <label for="menu-checkbox"
-        ><iconify-icon icon="pajamas:hamburger"></iconify-icon
-      ></label>
-      <input type="checkbox" id="menu-checkbox" />
+      <iconify-icon id="hamburger" icon="pajamas:hamburger"></iconify-icon>
       <a href="index.html"
         ><img
           src="images/logo.png"
@@ -50,7 +52,8 @@
       <nav>
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="products.html">Products</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="men.html">Men</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -59,98 +62,116 @@
         <a href="shoppingbag.html" aria-label="Go to shoppingbag">
           <iconify-icon icon="clarity:shopping-bag-solid"></iconify-icon
         ></a>
+        <div class="circle"></div>
       </div>
     </header>
 
     <main>
-      <section class="intro">
+      <section class="intro flex">
         <h1>expand your comfort zone</h1>
       </section>
 
-      <section class="categories">
-        <div class="categories__item">
-          <a href="products.html">
+      <section class="categories container split">
+        <div class="categories__item flex">
+          <a href="women.html">
             <img
               src="images/women.jpg"
               alt="a women sitting on a cliff and dreaming about her next adventure"
               class="categories-image"
             />
           </a>
-          <a href="products.html" class="categories__link">women </a>
+          <a href="women.html" class="categories__link">women </a>
         </div>
-        <div class="categories__item">
-          <a href="products.html">
+        <div class="categories__item flex">
+          <a href="men.html">
             <img
               src="images/men.jpg"
               alt="a man in his beloved darkgreen rainjacket"
               class="categories-image"
             />
           </a>
-          <a href="products.html" class="categories__link">men</a>
+          <a href="men.html" class="categories__link">men</a>
         </div>
       </section>
 
-      <section class="selling-points">
-        <div class="selling-points-wrapper">
+      <section class="selling-points flex">
+        <div class="selling-points-wrapper container flex">
           <h2>Follow your dreams</h2>
           <p>
             Get outside your comfort zone and begin the journey towards new
             adventures
           </p>
-
-          <div class="selling-points__action">
-            <a href="products.html" class="cta cta-big">explore our products</a>
-          </div>
+        </div>
+        <div class="selling-points__action">
+          <a href="men.html" class="cta cta-big">explore our products</a>
         </div>
       </section>
 
-      <section class="featured">
+      <section class="featured container split">
         <h2>Our bestsellers</h2>
-        <div class="featured__item">
-          <img
-            src="images/products/xlr-24.png"
-            alt="the rainjacket xlr 24"
-            class="product__image"
-          />
+        <div class="featured__item flex">
+          <a href="productdetails.html?id=24">
+            <img
+              src="images/products/xlr-24.png"
+              alt="the rainjacket xlr 24"
+              class="product__image"
+          /></a>
           <p>xlr 24</p>
-          <a href="product-page.html" class="cta">view more</a>
+          <div>
+            <a href="productdetails.html?id=24" class="cta">view more</a>
+          </div>
         </div>
-        <div class="featured__item">
-          <img
-            src="images/products/xlr-57.png"
-            alt="the rainjacket xlr 57"
-            class="product__image"
-          />
+        <div class="featured__item flex">
+          <a href="productdetails.html?id=57">
+            <img
+              src="images/products/xlr-57.png"
+              alt="the rainjacket xlr 57"
+              class="product__image"
+          /></a>
           <p>xlr 57</p>
-          <a href="product-page.html" class="cta">view more</a>
+          <div>
+            <a href="productdetails.html?id=57" class="cta">view more</a>
+          </div>
         </div>
       </section>
 
       <section class="subscribe">
-        <h2>Subscribe and follow the journey</h2>
-        <form action="subscribe-success.html" class="subscribe-form">
-          <label class="visually-hidden" for="email">email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email"
-            required
-          />
-          <div class="subscribe-form__action">
-            <button class="cta">Subscribe</button>
+        <div class="subscribe-background flex">
+          <div class="subscribe__wrapper container flex">
+            <h2>Subscribe to our newsletter and follow the journey</h2>
+            <form class="subscribe-form split" id="subscribe-form">
+              <div class="subscribe-form__wrapper flex">
+                <label class="visually-hidden" for="email">email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                />
+                <div class="subscribe-error" id="email-error">
+                  Please enter a valid email adress
+                </div>
+              </div>
+              <button class="subscribe-form__action cta">Subscribe</button>
+            </form>
           </div>
-        </form>
+        </div>
       </section>
     </main>
 
     <footer>
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="products.html">Products</a></li>
+
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <p>
+        Copyright &copy; 2023 |
+        <a href="https://www.michaelriver.dev" target="_blank"
+          >Michael Nilsson</a
+        >
+      </p>
     </footer>
   </body>
 </html>

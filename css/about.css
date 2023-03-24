@@ -1,24 +1,27 @@
 /* ABOUT */
 
 .about {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/michael_joey-cliff.jpg);
-    background-size: cover;
-    background-position: center bottom;
-    color: var(--text-color-light);
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-block: 50px;
+}
+
+.about-story {
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.about-story h1 {
     text-align: center;
-    padding-bottom: 70px;
 }
 
-.about__story {
-    margin: 50px 30px;
-    max-width: 600px;
+.about-story__wrapper {
+    max-width: 560px;
+    gap: 20px;
 }
 
-.about__story h1 {
-    margin: 0px 0px 50px;
-}
-
-.about__story p {
-    text-align: left;
-    margin: 0px 0px 15px;
+.about-action {
+    text-align: center;
 }

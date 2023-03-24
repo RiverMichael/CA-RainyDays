@@ -12,9 +12,23 @@ a:active {
     color: var(--text-color-dark)
 }
 
+nav ul:hover a, footer ul:hover a {
+    opacity: 0.5;
+}
+
+nav ul a:hover, footer ul a:hover {
+    opacity: 1;
+    color: var(--button-background-color);
+}
+
 .active {
     color: #656E67;
-    text-decoration: underline;
+    text-decoration:
+     underline;
+}
+
+.link {
+    cursor: pointer;
 }
 
 .cta {
@@ -88,3 +102,4 @@ button {
 .contact-info__item a {
     text-transform: lowercase;
 }
+

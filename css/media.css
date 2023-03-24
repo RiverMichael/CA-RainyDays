@@ -1,13 +1,18 @@
-@media (min-width: 500px) {
-
-    .shoppingbag__card, .checkout-wrapper {
-        margin: 30px auto;
-    }
-}
-
 @media (min-width: 600px) {
 
-    header label {
+    .split {
+        flex-direction: row;
+    }
+
+    .product__wrapper > * {
+        flex: 1;
+    }
+
+    .subscribe-form button {
+        align-self: flex-start;
+    }
+
+     #hamburger {
         display: none;
     }
 
@@ -26,46 +31,55 @@
 
     nav li {
         display: inline-block;
-        padding: 0px 10px;
+        padding-inline: 8px;
     }
 
-    .categories, .featured, .contact, .product {
+    .intro h1, .products-intro h1 {
+        font-size: 5em;
+    }
+    
+    h2 {
+        font-size: 3em;
+    }
+
+    .product {
         flex-direction: row;
-    }
-
-    .categories, .featured, .contact {
-        margin: 50px auto;
     }
 
     .featured {
         flex-wrap: wrap;
     }
 
-    .product-list {
-        grid-template-columns: repeat(2, 1fr);
+    .products-intro {
+        gap: 100px;
+        min-height: 40vh;
     }
 
-    .about__story {
-        margin: 80px auto;
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .product {
         margin: 30px auto 50px;
     }
+
+    .shoppingbag__card {
+        min-width: 400px;
+    }
 }
 
 @media (min-width: 900px) {
+
+    nav li {
+        padding-inline: 20px;
+    }
 
     .product-list {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .products-intro {
-        min-height: 35vh;
-    }
-
-    .products-intro h1 {
-        top: 80px;
+    .product__wrapper {
+        gap: 100px;
     }
 }
 
