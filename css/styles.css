@@ -67,11 +67,20 @@ header img {
 .shoppingcart-icon {
     justify-self: right;
     position: relative;
+}
+
+.shoppingcart-icon iconify-icon {
     transition: transform 0.25s;
 }
 
-.shoppingcart-icon:hover {
+.shoppingcart-icon:hover iconify-icon {
     transform: rotate(-20deg) scale(1.5);
+}
+
+.shoppingcart-icon:hover .circle {
+    transform: scale(1.5);
+    right: 0px;
+    top: 0px;
 }
 
 .circle {
@@ -83,6 +92,7 @@ header img {
     position: absolute;
     right: 0px;
     top: 5px;
+    transition: top, right, transform, 0.25s;
 }
 
 .display-nav {
