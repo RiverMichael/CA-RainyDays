@@ -69,8 +69,18 @@ header img {
     position: relative;
 }
 
-.shoppingcart-icon iconify-icon:hover {
-    color: #A0CCD7;
+.shoppingcart-icon iconify-icon {
+    transition: transform 0.25s;
+}
+
+.shoppingcart-icon:hover iconify-icon {
+    transform: rotate(-20deg) scale(1.5);
+}
+
+.shoppingcart-icon:hover .circle {
+    transform: scale(1.5);
+    right: 0px;
+    top: 0px;
 }
 
 .circle {
@@ -81,7 +91,8 @@ header img {
     height: 12px;
     position: absolute;
     right: 0px;
-    top: 0px;
+    top: 5px;
+    transition: top, right, transform, 0.25s;
 }
 
 .display-nav {

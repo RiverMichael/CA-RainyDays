@@ -12,13 +12,17 @@ a:active {
     color: var(--clr-dark)
 }
 
+nav ul a {
+    color: var(--clr-dark);
+}
+
 nav ul:hover a, footer ul:hover a {
     opacity: 0.5;
 }
 
 nav ul a:hover, footer ul a:hover {
     opacity: 1;
-    color: var(--clr-button-background);
+    color: var(--clr-dark);
 }
 
 .active {
