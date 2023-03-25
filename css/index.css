@@ -8,21 +8,6 @@
     background-position: center bottom;
 }
 
-.intro h1 {
-    animation: intro 2.5s ease-in;
-}
-
-@keyframes intro {
-    0% {
-        transform: scale(0.9);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
 .intro, .selling-points, .subscribe-form {
     justify-content: center;
     align-items: center;
