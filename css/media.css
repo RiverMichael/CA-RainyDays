@@ -34,6 +34,10 @@
         padding-inline: 8px;
     }
 
+    .intro {
+        min-height: 70vh;
+    }
+
     .intro h1, .products-intro h1 {
         font-size: 5em;
     }
