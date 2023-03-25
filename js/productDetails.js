@@ -1,7 +1,7 @@
 import products from "./data/products.js";
 import { clearHtml, createProductDetailsHtml } from "./components/createHtml.js";
 import { createMessage } from "./components/createMessage.js";
-import { getCartItems, saveCart } from "./cart/cart.js";
+import { getCartItems, saveCart } from "./components/cart.js";
 
 const iconArrowLeft = document.querySelector(".icon__back");
 iconArrowLeft.addEventListener("click", function() {

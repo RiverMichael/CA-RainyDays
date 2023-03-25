@@ -1,5 +1,4 @@
-
-import { getCartItems, saveCart} from "./cart/cart.js";
+import { getCartItems, saveCart } from "./components/cart.js";
 import { clearHtml, createShoppingBagHtml } from "./components/createHtml.js";
 import { createMessage } from "./components/createMessage.js";
 

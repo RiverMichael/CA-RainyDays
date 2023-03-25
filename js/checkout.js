@@ -1,6 +1,6 @@
 import { clearHtml, createCheckoutSuccessHtml } from "./components/createHtml.js";
 import { validateLength, exactLength } from "./components/formValidation.js";
-import { saveCart } from "./cart/cart.js";
+import { saveCart } from "./components/cart.js";
 
 const iconArrowLeft = document.querySelector(".icon__back");
 iconArrowLeft.addEventListener("click", function() {
