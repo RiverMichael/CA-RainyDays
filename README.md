@@ -26,7 +26,7 @@ Link to the prototype: https://www.figma.com/file/jQUUUyH8iHJmAXO375aD4N/RainyDa
 - To make the site more "clean" as an e-commerce site normally is I:
 
   - Removed the background color on the header/footer.
-  - Removed the background image on the shopping cart page, changed the background color of the shopping cart and checkout form.
+  - Removed the background image on the about page and the shopping cart page, and changed the background color of the shopping cart and checkout form.
 
 - Changed the homepage intro image to fit the site better.
 
