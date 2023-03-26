@@ -23,6 +23,8 @@
     nav {
         display: block;
         position: static;
+        animation: none;
+        width: unset;
     }
 
     nav li, footer li {
@@ -31,7 +33,12 @@
 
     nav li {
         display: inline-block;
+        padding-block: 0px;
         padding-inline: 8px;
+    }
+
+    nav ul {
+        padding: 0px;
     }
 
     .intro {

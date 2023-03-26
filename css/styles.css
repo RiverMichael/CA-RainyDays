@@ -49,7 +49,7 @@ header {
     grid-template-columns: 1fr auto 1fr;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 15px 20px;
     position: sticky;
     top: 0px;
     z-index: 1000;
@@ -85,19 +85,15 @@ header img {
     top: 5px;
 }
 
-.display-nav {
-    display: block;
-}
-
 nav ul {
-    padding: 0px;
+    padding: 20px;
 }
 
 nav li {
     font-weight: bold;
     font-size: 1.2em;
     display: block;
-    padding: 20px;
+    padding-block: 30px;
 }
 
 nav {
@@ -109,6 +105,23 @@ nav {
     display: none;
     border-radius: 0px 0px 15px 0px;
     background: var(--clr-background);
+    width: 100%;
+    text-align: center;
+    animation: displaynav 0.25s ease-in-out;
+    transform-origin: top;
+}
+
+@keyframes displaynav {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.display-nav {
+    display: block;
 }
 
 footer ul {
