@@ -20,7 +20,6 @@ function getShoppingBag() {
     try {
         renderShoppingbagItems(cartItems, itemsContainer);
         removeCartItem();
-        getTotalPrice(cartItems, totalPriceContainer);
     }
     catch(error) {
         console.log(error);
@@ -35,20 +34,13 @@ function renderShoppingbagItems(items, parentElement) {
         parentElement.innerText = "There is no item in your shopping cart";
     } else {
         items.forEach((item) => {
-            createShoppingBagHtml(item, parentElement);  
+            createShoppingBagHtml(item, parentElement);
+            totalPrice += item.price;
+            totalPriceContainer.innerText = totalPrice;
             checkoutButton.style.display = "inline-block";
         });
     }
 };
-
-function getTotalPrice(items, parentElement) {
-    items.forEach((item) => {
-        clearHtml(parentElement);
-        totalPrice += item.price;
-        parentElement.innerText = totalPrice;
-    })
-};
-
 
 function removeCartItem() {
     const removeItemButton = document.querySelectorAll(".remove-item");
@@ -58,14 +50,12 @@ function removeCartItem() {
         const itemContainer = button.closest(".shoppingcart-item");
         const itemName = itemContainer.querySelector("h2").innerText;
         const itemSize = itemContainer.querySelector("p").innerText;
-        const removeItem = cartItems.find((item) => item.name === itemName) && cartItems.find((item) => item.size === itemSize);
-        const cartItemId = removeItem.cartId;
+        const removedItem = cartItems.find((item) => item.name === itemName && item.size === itemSize);
+        const cartItemId = removedItem.cartId;
 
         const newCart = cartItems.filter((item) => item.cartId !== cartItemId);
         saveCart(newCart);
         itemContainer.remove();
-        
-        totalPrice -= removeItem.price;
 
         window.location.reload();
     });
