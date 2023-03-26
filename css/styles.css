@@ -99,7 +99,6 @@ nav li {
 nav {
     top: 115px;
     left: 0px;
-    padding: 0px 10px;
     z-index: 1000;
     position: absolute;
     display: none;
