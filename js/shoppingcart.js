@@ -1,5 +1,5 @@
 import { getCartItems, saveCart } from "./components/cart.js";
-import { clearHtml, createShoppingBagHtml } from "./components/createHtml.js";
+import { clearHtml, createShoppingCartHtml } from "./components/createHtml.js";
 import { createMessage } from "./components/createMessage.js";
 
 const iconArrowLeft = document.querySelector(".icon__back");
@@ -7,7 +7,7 @@ iconArrowLeft.addEventListener("click", function() {
     history.back();
 });
 
-const shoppingbagContainer = document.querySelector(".shoppingcart__card-wrapper");
+const shoppingCartContainer = document.querySelector(".shoppingcart__card-wrapper");
 const itemsContainer = document.querySelector(".shoppingcart__wrapper");
 const totalPriceContainer = document.querySelector(".total-price__span");
 const checkoutButton = document.querySelector(".shoppingcart__action a");
@@ -16,30 +16,36 @@ checkoutButton.style.display = "none";
 const cartItems = getCartItems();
 let totalPrice = 0;
 
-function getShoppingBag() {
+function getShoppingCart() {
     try {
-        renderShoppingbagItems(cartItems, itemsContainer);
+        renderShoppingCartItems(cartItems, itemsContainer);
         removeCartItem();
     }
     catch(error) {
         console.log(error);
-        clearHtml(shoppingbagContainer);
-        createMessage(shoppingbagContainer, "error", "There was an error while loading this page, please try again");
-    }
+        clearHtml(shoppingCartContainer);
+        createMessage(shoppingCartContainer, "error", "There was an error while loading this page, please try again");
+    };
 };
-getShoppingBag();
+getShoppingCart();
 
-function renderShoppingbagItems(items, parentElement) {
+function renderShoppingCartItems(items, parentElement) {
     if (items.length === 0) {
         parentElement.innerText = "There is no item in your shopping cart";
     } else {
         items.forEach((item) => {
-            createShoppingBagHtml(item, parentElement);
-            totalPrice += item.price;
+            createShoppingCartHtml(item, parentElement);
+
+            if (item.onSalePrice) {
+                totalPrice += parseFloat(item.onSalePrice)
+            } else {
+                totalPrice += parseFloat(item.price);
+            };
+            
             totalPriceContainer.innerText = totalPrice;
             checkoutButton.style.display = "inline-block";
         });
-    }
+    };
 };
 
 function removeCartItem() {
@@ -58,6 +64,6 @@ function removeCartItem() {
         itemContainer.remove();
 
         window.location.reload();
+        });
     });
-});
 };

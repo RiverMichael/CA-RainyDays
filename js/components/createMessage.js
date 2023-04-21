@@ -3,5 +3,5 @@ export function createMessage(parentElement, messageType, messageText) {
     message.classList.add(messageType);
     message.innerText = messageText;
 
-    return parentElement.append(message)
+    parentElement.append(message)
 };

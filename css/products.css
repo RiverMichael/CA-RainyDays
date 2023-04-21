@@ -32,11 +32,11 @@
     text-transform: uppercase;
 }
 
-.product-list, .product-card {
+.products, .product-card {
     display: grid;
 }
 
-.product-list {
+.products {
     grid-template-columns: 1fr;
     margin-block: 100px;
     gap: 50px;

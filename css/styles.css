@@ -203,7 +203,7 @@ input::-webkit-inner-spin-button {
 }
 
 .error, .success {
-    padding: 40px;
+    padding: 20px;
     text-align: center;
     width: min(100% - 50px, 600px);
     font-size: 1.2rem;
@@ -214,4 +214,31 @@ input::-webkit-inner-spin-button {
     justify-content: center;
     align-items: center;
     margin-block: 50px;
+}
+
+.loader {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 5px solid var(--clr-dark);
+    border-right: 5px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+  .on-sale {
+    color: darkred;
+    font-size: 1.2em;
 }

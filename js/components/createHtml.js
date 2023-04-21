@@ -1,155 +1,309 @@
-import htmlComponents from "./htmlComponents.js";
-
 export function clearHtml(parentElement) {
     parentElement.innerHTML = "";
 };
 
-// Subscribe Validation
-export function createSubscribeValidationHtml(parentElement) {
-    const validationHtml = createSubscribeValidationElements();
-    parentElement.append(validationHtml); 
+// Featured Products
+export function createFeaturedProductHtml(product, parentElement) {
+    const featuredProduct = document.createElement("div");
+    featuredProduct.classList.add("featured__item", "flex");
+
+    const productLink = document.createElement("a");
+    productLink.href = `productdetails.html?id=${product.id}`;
+    featuredProduct.append(productLink)
+
+    const productImage = document.createElement("img");
+    productImage.src = product.images[0].src;
+    productImage.alt = product.images[0].alt;
+    productLink.append(productImage);
+
+    const productTitle = document.createElement("h3");
+    productTitle.innerText = product.name;
+    featuredProduct.append(productTitle);
+
+    const button = document.createElement("div");
+    featuredProduct.append(button);
+    const buttonLink = document.createElement("a");
+    buttonLink.classList.add("cta");
+    buttonLink.innerText = "view more";
+    buttonLink.href = `productdetails.html?id=${product.id}`;
+    button.append(buttonLink);
+
+    parentElement.append(featuredProduct);
 };
 
-function createSubscribeValidationElements() {
-    const validationHeading = htmlComponents.createValidationHeading("Thank you for following our journey towards great adventures");
-    const exploreLink = htmlComponents.createExploreLink("Explore our products", "men.html");
-    const divLink = htmlComponents.createLinkDiv([exploreLink]);
-    const containerWrapper = htmlComponents.createContainerWrapper([validationHeading, divLink]);
-    const validationContainer = htmlComponents.createSubscribeValidationContainer("background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/road-to-the-journey.jpg); background-position: center 70%; background-size: cover;", [containerWrapper]);
 
-    return validationContainer;
+// Subscribe Validation
+export function createSubscribeValidationHtml(parentElement) {
+    const validationContainer = document.createElement("div");
+    validationContainer.classList.add("subscribe-background", "subscribe-success", "flex");
+
+    const validationWrapper = document.createElement("div");
+    validationWrapper.classList.add("subscribe__wrapper", "container", "flex");
+    validationContainer.append(validationWrapper);
+
+    const validationHeading = document.createElement("h2");
+    validationHeading.innerText = "Thank you for following our journey towards great adventures";
+    validationWrapper.append(validationHeading);
+
+    const button = document.createElement("div")
+    validationWrapper.append(button);
+    const buttonLink = document.createElement("a");
+    buttonLink.classList.add("cta", "cta-big");
+    buttonLink.innerText = "Explore our products";
+    buttonLink.href = "men.html";
+    button.append(buttonLink);
+
+    parentElement.append(validationContainer);
 };
 
 
 // Products Page
 export function createProductCardHtml(product, parentElement) {
-    const cardHtml = createProductCardElements(product);
-    parentElement.append(cardHtml);
-};
+    const productLink = document.createElement("a");
+    productLink.classList.add("card-link");
+    productLink.href = `productdetails.html?id=${product.id}`;
 
-function createProductCardElements(product) {
-    const productTitle = htmlComponents.createProductTitle(product.name);
-    const productText = htmlComponents.createProductText(product.summary);
-    const productPriceSymbol = htmlComponents.createPriceSymbol("€ ");
-    const productPrice = htmlComponents.createProductPrice(product.price);
-    productPriceSymbol.appendChild(productPrice);
-    const productCardDetails = htmlComponents.createProductCardDetails([productTitle, productText, productPriceSymbol]);
+    const productCard = document.createElement("div");
+    productCard.classList.add("product-card");
+    productLink.append(productCard);
 
-    const productImage = htmlComponents.createProductImage(`background-image: url(${product.image})`);
-    const productCard = htmlComponents.createProductCard([productImage, productCardDetails]);
-    const productLink = htmlComponents.createProductLink([productCard], `productdetails.html?id=${product.id}`);
+    const productImage = document.createElement("div");
+    productImage.classList.add("card-image");
+    productImage.style = `background-image: url(${product.images[0].src})`;
+    productCard.append(productImage);
 
-    return productLink;
+    const productCardDetails = document.createElement("div");
+    productCardDetails.classList.add("product-card__details", "flex");
+    productCard.append(productCardDetails);
+
+    const productTitle = document.createElement("h2");
+    productTitle.innerText = product.name;
+    productCardDetails.append(productTitle);
+
+    const productText = document.createElement("p");
+    productText.innerText = product.short_description.replace("<p>", "").replace("</p>", "");
+    productCardDetails.append(productText);
+ 
+    // Price
+    const priceSymbol = document.createElement("p");
+    priceSymbol.classList.add("price");
+    priceSymbol.innerText = product.prices.currency_symbol + " ";
+    productCardDetails.append(priceSymbol);
+    
+    const productPrice = document.createElement("span");
+    productPrice.innerText = product.prices.regular_price;
+    priceSymbol.append(productPrice);
+
+    if (product.on_sale === true) {
+        productPrice.style = `text-decoration: line-through`;
+
+        const priceSymbolOnSale = document.createElement("p");
+        priceSymbolOnSale.classList.add("on-sale");
+        priceSymbolOnSale.innerText = product.prices.currency_symbol + " ";
+        priceSymbol.append(priceSymbolOnSale);
+        const onSalePrice = document.createElement("span");
+        onSalePrice.innerText = product.prices.sale_price;
+        priceSymbolOnSale.append(onSalePrice);
+    };
+
+    parentElement.append(productLink);
 };
 
 
 // ProductDetails Page
 export function createProductDetailsHtml(product, parentElement) {
-    const detailsHtml = createProductDetailsElements(product);
-    parentElement.append(detailsHtml);
-};
+    const detailsContainer = document.createElement("div");
+    detailsContainer.classList.add("product__wrapper", "split");
 
-function createProductDetailsElements(product) {
     // Images
-    const productImage = htmlComponents.createProductDetailsImage(product.image, product.name);
-    const thumbnail1 = htmlComponents.createThumbnailImage(product.image, product.name, product.id);
-    const thumbnail2 = htmlComponents.createThumbnailImage(product.image, product.name);
-    const thumbnail3 = htmlComponents.createThumbnailImage(product.image, product.name);
-    const thumbnail4 = htmlComponents.createThumbnailImage(product.image, product.name);
-    const productThumbnailsContainer = htmlComponents.createProductThumbnailsContainer([thumbnail1, thumbnail2, thumbnail3, thumbnail4]);
-    const productImageWrapper = htmlComponents.createProductDetailsImageWrapper([productImage, productThumbnailsContainer]);
+    const imageWrapper = document.createElement("div");
+    imageWrapper.classList.add("product-images__wrapper", "flex");
+    detailsContainer.append(imageWrapper);
+    const productImage = document.createElement("img");
+    productImage.classList.add("product-image");
+    productImage.src = product.images[0].src;
+    productImage.alt = product.images[0].alt;
+    imageWrapper.append(productImage);
 
-    // Details Text
-    const productTitle = htmlComponents.createProductDetailsTitle(product.name);
-    const productDescription = htmlComponents.createProductDetailsDescription(product.description);
-    const productPriceSymbol = htmlComponents.createPriceSymbol("€ ");
-    const productPrice = htmlComponents.createProductPrice(product.price);
-    productPriceSymbol.appendChild(productPrice);
-    
+    // Thumbnails
+    const thumbnailsContainer = document.createElement("div");
+    thumbnailsContainer.classList.add("product-thumbnails", "flex");
+    imageWrapper.append(thumbnailsContainer);
+
+    product.images.forEach(image => {
+        const thumbnail = document.createElement("img");
+        thumbnail.classList.add("product-thumbnails__image");
+        thumbnail.src = image.src;
+        thumbnail.alt = image.alt;
+        thumbnailsContainer.append(thumbnail);
+    });
+
+    const productDetails = document.createElement("div");
+    productDetails.classList.add("product-details", "flex");
+    detailsContainer.append(productDetails);
+
+    // Details text
+    const productTitle = document.createElement("h1");
+    productTitle.innerText = product.name;
+    productDetails.append(productTitle);
+    const productDescription = document.createElement("p");
+    productDescription.classList.add("product-details__description");
+    productDescription.innerText = product.description.replace("<p>", "").replace("</p>", "");
+    productDetails.append(productDescription);
+
+    // Price
+    const priceSymbol = document.createElement("p");
+    priceSymbol.classList.add("price");
+    priceSymbol.innerText = product.prices.currency_symbol + " ";
+    productDetails.append(priceSymbol);
+    const productPrice = document.createElement("span");
+    productPrice.innerText = product.prices.regular_price;
+    priceSymbol.append(productPrice);
+
+    if (product.on_sale === true) {
+        productPrice.style = `text-decoration: line-through`;
+
+        const priceSymbolOnSale = document.createElement("p");
+        priceSymbolOnSale.classList.add("on-sale");
+        priceSymbolOnSale.innerText = product.prices.currency_symbol + " ";
+        priceSymbol.append(priceSymbolOnSale);
+        const onSalePrice = document.createElement("span");
+        onSalePrice.innerText = product.prices.sale_price;
+        priceSymbolOnSale.append(onSalePrice);
+    };
+
     // Size Form
-    const sizeInputSmall = htmlComponents.createSizeInput("S");
-    const sizeSmallLabel = htmlComponents.createInputLabel("S", sizeInputSmall);
-    sizeSmallLabel.setAttribute("for", sizeInputSmall.id)
-    const sizeInputSmallContainer = htmlComponents.createSizeInputsContainer([sizeInputSmall, sizeSmallLabel]);
+    const sizeForm = document.createElement("form");
+    sizeForm.classList.add("size-form", "flex");
+    sizeForm.id = "size-form";
+    productDetails.append(sizeForm);
 
-    const sizeInputMedium = htmlComponents.createSizeInput("M");
-    const sizeMediumLabel = htmlComponents.createInputLabel("M", sizeInputMedium);
-    sizeMediumLabel.setAttribute("for", sizeInputMedium.id)
-    const sizeInputMediumContainer = htmlComponents.createSizeInputsContainer([sizeInputMedium, sizeMediumLabel]);
+    const formFieldset = document.createElement("fieldset");
+    sizeForm.append(formFieldset);
+    const fieldsetLegend = document.createElement("legend");
+    fieldsetLegend.classList.add("visually-hidden");
+    formFieldset.append(fieldsetLegend);
+    const sizeFormSelect = document.createElement("div");
+    sizeFormSelect.classList.add("size-form__select", "flex");
+    formFieldset.append(sizeFormSelect);
 
-    const sizeInputLarge = htmlComponents.createSizeInput("L");
-    const sizeLargeLabel = htmlComponents.createInputLabel("L", sizeInputLarge);
-    sizeLargeLabel.setAttribute("for", sizeInputLarge.id)
-    const sizeInputLargeContainer = htmlComponents.createSizeInputsContainer([sizeInputLarge, sizeLargeLabel]);
+    product.variations.forEach(variation => {
+        const sizeContainer = document.createElement("div");
+        sizeContainer.classList.add("size", "flex");
+        sizeFormSelect.append(sizeContainer);
+        const sizeInput = document.createElement("input");
+        sizeInput.id = variation.id;
+        sizeInput.value = variation.attributes[0].value;
+        sizeInput.type = "radio";
+        sizeInput.name = variation.attributes[0].name;
+        sizeContainer.append(sizeInput);
+        const sizeLabel = document.createElement("label");
+        sizeLabel.innerText = sizeInput.value;
+        sizeLabel.setAttribute("for", variation.id);
+        sizeContainer.append(sizeLabel);
+    });
 
-    const sizeInputExtraLarge = htmlComponents.createSizeInput("XL");
-    const sizeExtraLargeLabel = htmlComponents.createInputLabel("XL", sizeInputExtraLarge);
-    sizeExtraLargeLabel.setAttribute("for", sizeInputExtraLarge.id)
-    const sizeInputExtraLargeContainer = htmlComponents.createSizeInputsContainer([sizeInputExtraLarge, sizeExtraLargeLabel]);
+    const sizeFormError = document.createElement("div");
+    sizeFormError.classList.add("size-form-validation");
+    productDetails.append(sizeFormError);
 
-    const sizeFormSelect = htmlComponents.createSizeFormSelect([sizeInputSmallContainer, sizeInputMediumContainer, sizeInputLargeContainer, sizeInputExtraLargeContainer]);
-    const fieldsetLegend = htmlComponents.createFieldsetLegend("Choose your size");
+    const formButton = document.createElement("button");
+    formButton.classList.add("cta");
+    formButton.innerText = "add to cart";
+    sizeForm.append(formButton);
 
-    const formFieldset = htmlComponents.createSizeFormFieldset([fieldsetLegend, sizeFormSelect]);
-    const sizeFormButton = htmlComponents.createsizeFormButton("add to cart");
-    const sizeForm = htmlComponents.createProductSizeForm([formFieldset, sizeFormButton]);
-
-    const sizeFormError = htmlComponents.createSizeError();
-
-    const productDetails = htmlComponents.createProductDetails([productTitle, productDescription, productPriceSymbol, sizeForm, sizeFormError]);
-
-    const childitems = [productImageWrapper, productDetails];
-    const productDetailsContainer = htmlComponents.createProductDetailsContainer(childitems)
-
-    return productDetailsContainer;
+    document.title = `RainyDays | Products | ${product.name}`;
+    parentElement.append(detailsContainer);
 };
 
 
-// Shoppingbag Page
-export function createShoppingBagHtml(item, parentElement) {
-    const shoppingbagHtml = createShoppingbagElements(item);
-    parentElement.append(shoppingbagHtml);
-};
+// ShoppingCart
+export function createShoppingCartHtml(item, parentElement) {
+    const cartItem = document.createElement("div");
+    cartItem.classList.add("shoppingcart-item", "flex");
 
-function createShoppingbagElements(item) {
+    // Image
+    const itemImageContainer = document.createElement("div");
+    itemImageContainer.classList.add("shoppingcart-item__image");
+    cartItem.append(itemImageContainer);
+    const itemLink = document.createElement("a");
+    itemLink.href = `productdetails.html?id=${item.id}`;
+    itemImageContainer.append(itemLink);
+    const itemImage = document.createElement("img");
+    itemImage.classList.add("product__image");
+    itemImage.src = item.image;
+    itemImage.alt = item.imageAlt;
+    itemLink.append(itemImage);
 
-    const shoppingbagItemImage = htmlComponents.createShoppingbagItemImage(item.image, item.name);
-    const shoppingbagItemLink = htmlComponents.createShoppingbagItemLink(`productdetails.html?id=${item.id}`, [shoppingbagItemImage]);
-    const shoppingbagImageContainer = htmlComponents.createShoppingbagImageContainer([shoppingbagItemLink]);
+    // Details
+    const itemDetails = document.createElement("div");
+    itemDetails.classList.add("shoppingcart-details", "flex");
+    cartItem.append(itemDetails);
+    const itemInfo = document.createElement("div");
+    itemInfo.classList.add("shoppingcart-item__info", "flex");
+    itemDetails.append(itemInfo);
+    const itemTitle = document.createElement("h2");
+    itemTitle.innerText = item.name;
+    itemInfo.append(itemTitle);
+    const itemSize = document.createElement("p");
+    itemSize.innerText = item.size;
+    itemInfo.append(itemSize);
 
-    const shoppingbagItemPriceSymbol = htmlComponents.createShoppingbagItemPriceSymbol("€ ");
-    const shoppingbagItemPrice = htmlComponents.createShoppingbagPrice(item.price);
-    shoppingbagItemPriceSymbol.appendChild(shoppingbagItemPrice);
-    // const shoppingbagItemRemove = htmlComponents.createShoppingbagItemRemove("Remove item");
-    const shoppingbagItemRemove = htmlComponents.createShoppingbagItemRemove("/images/delete-outline-rounded.svg", "delete item");
-    const shoppingbagItemPriceContainer = htmlComponents.createShoppingbagPriceContainer([shoppingbagItemPriceSymbol, shoppingbagItemRemove]);
+    // Price
+    const itemPriceContainer = document.createElement("div");
+    itemPriceContainer.classList.add("shoppingcart-item__price", "flex");
+    itemDetails.append(itemPriceContainer);
+    const priceSymbol = document.createElement("p");
+    priceSymbol.innerText = "€ ";
+    itemPriceContainer.append(priceSymbol);
+    const itemPrice = document.createElement("span");
+    itemPrice.innerText = item.price;
+    priceSymbol.append(itemPrice);
 
-    const shoppingbagItemSize = htmlComponents.createShoppingbagItemSize(item.size);
-    const shoppingbagItemTitle = htmlComponents.createShoppingbagItemTitle(item.name);
-    const shoppingbagItemInfo = htmlComponents.createShoppingbagItemInfo([shoppingbagItemTitle, shoppingbagItemSize]);
-    const shoppingbagItemDetails = htmlComponents.createShoppingbagItemDetails([shoppingbagItemInfo, shoppingbagItemPriceContainer]);
-    const shoppingbagItem = htmlComponents.createShoppingbagItem([shoppingbagImageContainer, shoppingbagItemDetails]);
+    if (item.onSalePrice) {
+        itemPrice.style = `text-decoration: line-through`;
 
-    return shoppingbagItem;
+        const priceSymbolOnSale = document.createElement("p");
+        priceSymbolOnSale.style = "color: darkred";
+        priceSymbolOnSale.innerText =  "€ ";
+        priceSymbol.append(priceSymbolOnSale);
+        const onSalePrice = document.createElement("span");
+        onSalePrice.innerText = item.onSalePrice;
+        priceSymbolOnSale.append(onSalePrice);
+    };
+
+    const itemRemove = document.createElement("img");
+    itemRemove.classList.add("remove-item", "link");
+    itemRemove.src = "/images/delete-outline-rounded.svg";
+    itemRemove.alt = "delete item";
+    itemPriceContainer.append(itemRemove);
+
+    parentElement.append(cartItem);
 };
 
 
 // Checkout Validation
 export function createCheckoutSuccessHtml(parentElement) {
-    const checkoutSuccessHtml = createCheckoutSuccessElements();
-    parentElement.append(checkoutSuccessHtml);
+    const successContainer = document.createElement("section");
+    successContainer.classList.add("checkout-success", "flex");
+
+    const successTitle = document.createElement("h1");
+    successTitle.innerText = "Thank you for your order";
+    successContainer.append(successTitle);
+
+    const successText = document.createElement("p");
+    successText.innerText = "You are now one step closer to your next adventure";
+    successContainer.append(successText);
+
+    const button = document.createElement("div");
+    button.classList.add("checkout-success__action");
+    successContainer.append(button);
+    const buttonLink = document.createElement("a");
+    buttonLink.classList.add("cta", "cta-big");
+    buttonLink.innerText = "Continue shopping";
+    buttonLink.href = "/men.html";
+    button.append(buttonLink);
+
     document.title = "RainyDays | Checkout Success";
-};
-
-function createCheckoutSuccessElements() {
-
-    const checkoutSuccessTitle = htmlComponents.createCheckoutSuccessTitle("Thank you for your order");
-    const checkoutSuccessText = htmlComponents.createCheckoutSuccessText("You are now one step closer to your next adventure");
-
-    const checkoutSuccessButton = htmlComponents.createCheckoutSuccessActionButton("Continue shopping", "/men.html");
-    const checkoutSuccessActionContainer = htmlComponents.createCheckoutSuccessActionContainer([checkoutSuccessButton]);
-
-    const checkoutSuccessContainer = htmlComponents.createCheckoutSuccessContainer([checkoutSuccessTitle, checkoutSuccessText, checkoutSuccessActionContainer]);
-
-    return checkoutSuccessContainer;
+    parentElement.append(successContainer);
 };

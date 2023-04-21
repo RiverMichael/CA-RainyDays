@@ -11,7 +11,7 @@ export function validateEmail(input, value, errorMessage) {
     return result
 };
 
-export function validateLength(value, length) {
+export function validateMinLength(value, length) {
     if(value.trim().length >= length) {
         return true;
     } else {
@@ -19,7 +19,7 @@ export function validateLength(value, length) {
     }
 };
 
-export function exactLength(value, length) {
+export function validateLength(value, length) {
     if (value.trim().length === length) {
         return true;
     } else {

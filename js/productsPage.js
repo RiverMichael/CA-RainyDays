@@ -1,17 +1,19 @@
-import products from "./data/products.js";
-import { renderProducts } from "./components/render.js";
+import { getProducts, renderProducts } from "./components/render.js";
+import { clearHtml } from "./components/createHtml.js";
 import { createMessage } from "./components/createMessage.js";
 
-const cardContainer = document.querySelector(".product-list");
+const productsContainer = document.querySelector(".products");
 const messageContainer = document.querySelector(".message");
 
-function getProducts() {
+async function productsPage() {
+    const products = await getProducts();
     try {
-        renderProducts(products, cardContainer);
+        clearHtml(productsContainer);
+        renderProducts(products.reverse(), productsContainer);
     }
     catch(error) {
         console.log(error);
         createMessage(messageContainer, "error", "There was an error while loading this page, please try again");
-    }
+    };
 };
-getProducts();
+productsPage();

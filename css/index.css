@@ -18,7 +18,7 @@
     text-transform: capitalize;
 }
 
-.intro h1, .categories, .featured, .selling-points, .subscribe {
+.intro h1, .categories, .featured__wrapper, .selling-points, .subscribe {
     text-align: center;
 }
 
@@ -29,10 +29,6 @@
 
 .categories__item {
     gap: 10px;
-}
-
-.categories > *, .featured > * {
-    flex: 1;
 }
 
 .categories-image {
@@ -57,21 +53,23 @@
     gap: 20px;
 }
 
-.featured {
+.featured__wrapper {
     padding-block: 100px;
 }
 
-.featured, .subscribe__wrapper {
+.featured__wrapper, .subscribe__wrapper {
     gap: 50px;
+}
+
+.featured {
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .featured__item {
     border-radius: 8px;
     padding: 50px;
-}
-
-.featured h2 {
-    flex: 1 0 100%;
+    flex: 1;
 }
 
 .featured__item p {
@@ -88,6 +86,12 @@
     color: var(--clr-light);
     padding-block: 50px;
     justify-content: center;
+}
+
+.subscribe-success {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/road-to-the-journey.jpg);
+    background-position: center 70%;
+    background-size: cover;
 }
 
 .subscribe h2 {
