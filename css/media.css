@@ -105,6 +105,14 @@
     .shoppingcart__card {
         min-width: 400px;
     }
+
+    .filter__wrapper {
+        flex-direction: row;
+    }
+
+    .filter {
+        align-items: flex-end;
+    }
 }
 
 @media (min-width: 900px) {

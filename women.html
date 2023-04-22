@@ -60,18 +60,35 @@
         <h1>Jackets for women</h1>
       </section>
 
-      <div class="filter flex">
-        <label for="sort" class="visually-hidden">Sort products</label>
-        <div class="sort-select">
-          <select name="sort" id="sort">
-            <option selected disabled value="">Sort Products</option>
-            <option value="price-low-high">Sort by price Low - High</option>
-            <option value="price-high-low">Sort by price High - Low</option>
-            <option value="name-az">Sort by name A - Z</option>
-            <option value="name-za">Sort by name Z - A</option>
-          </select>
+      <section class="filter flex">
+        <h2>Filter/Sort products</h2>
+        <div class="filter__wrapper flex">
+          <div class="sort-select">
+            <label for="sort" class="visually-hidden">Sort products</label>
+            <select name="sort" id="sort">
+              <option selected disabled value="">Sort Products</option>
+              <option value="price-low-high">Sort by price Low - High</option>
+              <option value="price-high-low">Sort by price High - Low</option>
+              <option value="name-az">Sort by name A - Z</option>
+              <option value="name-za">Sort by name Z - A</option>
+            </select>
+          </div>
+
+          <div class="filter-select" id="color">
+            <label for="filter-color" class="visually-hidden"
+              >Filter by color</label
+            >
+            <select name="color" id="filter-color">
+              <option selected disabled value="">Filter by Color</option>
+              <option value="all">All Colors</option>
+              <option value="black">Black</option>
+              <option value="grey">Grey</option>
+              <option value="orange">Orange</option>
+              <option value="red">Red</option>
+            </select>
+          </div>
         </div>
-      </div>
+      </section>
 
       <div class="message"></div>
 
