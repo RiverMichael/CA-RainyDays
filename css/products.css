@@ -75,3 +75,31 @@
 .price {
     font-weight: 700;
 }
+
+.filter {
+    width: min(100% - 50px, 1200px);
+    margin-inline: auto;
+    align-items: flex-end;
+    padding-top: 50px;
+}
+
+.sort-select select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    padding: 8px;
+    border-radius: 50px;
+    font-size: 1em;
+    border: 1px solid transparent;
+    color: var(--clr-dark);
+    background: #fff;
+    box-shadow: 0px 1px 4px var(--clr-dark);
+    transition-duration: 0.25s;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.sort-select select:hover {
+    border: 1px solid var(--clr-dark);
+}

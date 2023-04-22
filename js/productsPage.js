@@ -1,9 +1,13 @@
 import { getProducts, renderProducts } from "./components/render.js";
 import { clearHtml } from "./components/createHtml.js";
 import { createMessage } from "./components/createMessage.js";
+import { sortProducts } from "./components/sortFilter.js";
 
 const productsContainer = document.querySelector(".products");
 const messageContainer = document.querySelector(".message");
+const sortSelect = document.querySelector("#sort");
+
+sortSelect.addEventListener("change", sortProducts);
 
 async function productsPage() {
     const products = await getProducts();
