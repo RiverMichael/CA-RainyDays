@@ -44,6 +44,16 @@ Link to the prototype: https://www.figma.com/file/jQUUUyH8iHJmAXO375aD4N/RainyDa
 
 - Implemented JS validation on all form inputs instead of HTML required.
 
+### Changes made with CSM
+
+- Created a headless Wordpress site and installed WooCommerce to get an API to fetch the products from.
+
+- Fetching and rendering the products from the API instead of a local JS file.
+
+- Rendering the bestsellers section (featured) on the Home page from the API instead of creating it in pure HTML.
+
+- Added a simple sort and filter function to the products page.
+
 ## Link to the finished website
 
 https://rainydays.michaelriver.dev
