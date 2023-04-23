@@ -12,13 +12,12 @@ export async function sortProducts(event) {
     if (selected === "price-low-high") {
         sortedProducts = sortedProducts.sort((a, b) => parseFloat(a.prices.price) - parseFloat(b.prices.price));
     } else if (selected === "price-high-low") {
-        sortedProducts = sortedProducts.sort((a, b) => parseFloat(b.prices.price) - (a.prices.price));
+        sortedProducts = sortedProducts.sort((a, b) => parseFloat(b.prices.price) - parseFloat(a.prices.price));
     } else if (selected === "name-az") {
         sortedProducts = sortedProducts.sort((a, b) => a.name.localeCompare(b.name));
     } else if (selected === "name-za") {
         sortedProducts = sortedProducts.sort((a, b) => b.name.localeCompare(a.name));
     }
-    
     
     clearHtml(productsContainer);
     renderProducts(sortedProducts, productsContainer);
@@ -27,7 +26,7 @@ export async function sortProducts(event) {
 export async function filterProducts(event) {
     const products = await getProducts();
     let filteredProducts = products;
-    let selected = event.target.value;
+    const selected = event.target.value;
 
     if (selected === "all") {
         filteredProducts = products;
