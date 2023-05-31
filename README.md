@@ -57,8 +57,6 @@ The project is built with HTML, CSS and JavaScript using the WordPress WooCommer
 
 The WordPress API is hosted on a droplet by [Digitalocean](https://www.digitalocean.com) and for the deployment of the website I'm using [Vercel](https://www.vercel.com).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ### Built With
 
 - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/FrontendDevelopment/html.svg" alt="html" height="30" width="40">HTML</a>
