@@ -1,65 +1,131 @@
-# RainyDays
+<a id="readme-top"></a>
 
-This is my course assignment for the course in HTML/CSS at Noroff.
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/RiverMichael/CA-RainyDays">
+    <img src="images/logo.png" alt="Logo" width="200" height="">
+  </a>
 
-## Description
+<h3>Cross Course Project - RainyDays</h3>
+<p>A responsive eCommerce website integrated with the WordPress WooCommerce API</p>
 
-The assignment was to build a responsive website using html and css based on the prototype we made in the course Design1.
-Link to the prototype: https://www.figma.com/file/jQUUUyH8iHJmAXO375aD4N/RainyDays
+<a href="https://rainydays.michaelriver.dev">View live site</a> - <a href="https://github.com/RiverMichael/CA-RainyDays"> Link to project</a>
 
-## Changes made from prototype to finished website
+</div>
 
-### Changes made while construction the site in HTML/CSS based on the prototype
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#description">Description</a>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-- On the homepage I decided to put the categories and bestseller images in a column instead of a row on smaller screen sizes. This was done to be able to have bigger images and make it more user friendly.
+<!-- ABOUT THE PROJECT -->
 
-- I added a "card effect" to the items in the bestseller categories on the homepage, and also as a hover effect to the products on the product page.
+## About The Project
 
-- On the product specific page I chose to take away the zoom-in icon next to the product image and replace it with thumbnails below the main picture instead.
+[![RainyDays Screen Shot][product-screenshot]][live-site]
 
-- I decided to change the colors on the checkout-card to make it look more like a card popping up.
+### Description
 
-- I added a footer on all screen sizes instead of only on the mobile version, as was suggested in the feedback from the design course.
+This was my first project and started out as my assignment for the course in HTML/CSS at Noroff. The goal was to build a responsive website for an online store based on my own [prototype][figma-link] made with Figma for a previous course in Design.
 
-### Changes made when applying JS and changes based on the course in IxD
+The project was a cross course project and was later modified with the knowledge I gained from the courses in:
 
-- To make the site more "clean" as an e-commerce site normally is I:
+- JavaScript
+- Interaction Design (IxD)
+- Content Management Systems (CSM)
 
-  - Removed the background color on the header/footer.
-  - Removed the background image on the about page and the shopping cart page, and changed the background color of the shopping cart and checkout form.
+The project is built with HTML, CSS and JavaScript using the WordPress WooCommerce API for content management.
 
-- Changed the homepage intro image to fit the site better.
+The WordPress API is hosted on a droplet by [Digitalocean](https://www.digitalocean.com) and for the deployment of the website I'm using [Vercel](https://www.vercel.com).
 
-- Changed the menu:hover effect, and the hover effect on the products on the product page.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- Changed the name shopping bag to shopping cart, and made som overall CSS changes on that page.
+### Built With
 
-- Made a local JS file containing the different products in an array of objects.
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/FrontendDevelopment/html.svg" alt="html" height="30" width="40"> HTML</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/FrontendDevelopment/css.svg" alt="css" height="30" width="40"> CSS</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/ProgrammingLanguages/javascript.svg" alt="javascript" height="30" width="40"> JavaScript</a>
+<a href="https://www.wordpress.org" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/wordpress.svg" alt="wordpress" height="30" width="40"> WordPress API</a>
 
-- Created a product specific description page rendering the different products from the local array.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- Made the shopping cart functional with JS using local storage.
+<!-- GETTING STARTED -->
 
-- Made the hamburger menu work with JS instead of the checkbox hack.
+## Getting Started
 
-- Implemented JS validation on all form inputs instead of HTML required.
+To get a local copy up and running follow these steps.
 
-### Changes made with CSM
+<!-- INSTALLATION -->
 
-- Created a headless Wordpress site and installed WooCommerce to get an API to fetch the products from.
+### Installation
 
-- Fetching and rendering the products from the API instead of a local JS file.
+Clone the repo:
 
-- Rendering the bestsellers section (featured) on the Home page from the API instead of creating it in pure HTML.
+```sh
+git clone https://github.com/RiverMichael/CA-RainyDays.git
+```
 
-- Added a simple sort and filter function to the products page.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Link to the finished website
+<!-- CONTRIBUTING -->
 
-https://rainydays.michaelriver.dev
+## Contributing
 
-## Authors
+If you want to help me make this project better, please fork the repo and create a pull request.
 
-Michael Nilsson - FrontEnd Development student at Noroff, class of Aug22FT.
+1. Fork the Project
+2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+4. Push to the Branch (git push origin feature/AmazingFeature)
+5. Open a Pull Request
 
-https://michaelriver.dev
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTACT -->
+
+## Contact
+
+Michael "River" Nilsson - [mrn@michaelriver.dev](mailto:mrn@michaelriver.dev) - [michaelriver.dev](https://www.michaelriver.dev)
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+[Link to project][github-repo]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AACKNOWLEDGMENTS -->
+
+## Acknowledgments
+
+- [WordPress](https://www.wordpress.org)
+- [WooCommerce API](https://woocommerce.github.io/woocommerce-rest-api-docs)
+- [Vercel](https://www.vercel.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+
+[github-repo]: https://github.com/RiverMichael/CA-RainyDays
+[live-site]: https://rainydays.michaelriver.dev
+[product-screenshot]: images/rainydays_screen-shot.jpg
+[figma-link]: https://www.figma.com/file/jQUUUyH8iHJmAXO375aD4N/RainyDays
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/michaelrivernilsson
