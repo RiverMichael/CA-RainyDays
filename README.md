@@ -105,6 +105,7 @@ If you want to help me make this project better, please fork the repo and create
 ## Contact
 
 Michael "River" Nilsson - [mrn@michaelriver.dev](mailto:mrn@michaelriver.dev) - [michaelriver.dev](https://www.michaelriver.dev)
+
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 [Link to project][github-repo]
