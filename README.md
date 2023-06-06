@@ -29,6 +29,7 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#Running">Installation</a></li>
       </ul>
     </li>
     <li><a href="#contributing">Contributing</a></li>
@@ -76,11 +77,23 @@ To get a local copy up and running follow these steps.
 
 ### Installation
 
-Clone the repo:
+1. Open the terminal and go to your desired folder
+
+2. Initialize a local Git repository
+
+```sh
+git init
+```
+
+3. Clone the repo:
 
 ```sh
 git clone https://github.com/RiverMichael/CA-RainyDays.git
 ```
+
+### Running
+
+Open the folder of the cloned repo in a code editor (ex. VSCode).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
