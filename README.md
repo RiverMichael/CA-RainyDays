@@ -119,7 +119,7 @@ Michael "River" Nilsson - [mrn@michaelriver.dev](mailto:mrn@michaelriver.dev) - 
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-[Link to project][github-repo]
+[Link to project][github-repo] | [Link to live site][live-site]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
