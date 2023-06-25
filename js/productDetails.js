@@ -4,16 +4,16 @@ import { createMessage } from "./components/createMessage.js";
 import { getCartItems, saveCart } from "./components/cart.js";
 import { openModal, closeModal } from "./components/modal.js";
 
-const iconArrowLeft = document.querySelector(".icon__back");
-iconArrowLeft.addEventListener("click", function () {
-  history.back();
-});
-
 const productContainer = document.querySelector(".product");
 const messageContainer = document.querySelector(".message");
 const modalContent = document.querySelector(".modal-content");
 const modalOverlay = document.querySelector(".modal-overlay");
 const closeModalButton = document.querySelector(".icon-close");
+
+const iconArrowLeft = document.querySelector(".icon__back");
+iconArrowLeft.addEventListener("click", function () {
+  history.back();
+});
 
 modalOverlay.addEventListener("click", () => closeModal(modalContent, modalOverlay));
 closeModalButton.addEventListener("click", () => closeModal(modalContent, modalOverlay));

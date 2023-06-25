@@ -60,7 +60,7 @@ header {
   padding: 15px 20px;
   position: sticky;
   top: 0px;
-  z-index: 1000;
+  z-index: 800;
 }
 
 header img {
@@ -107,7 +107,7 @@ nav li {
 nav {
   top: 115px;
   left: 0px;
-  z-index: 1000;
+  z-index: 800;
   position: absolute;
   display: none;
   border-radius: 0px 0px 15px 0px;
