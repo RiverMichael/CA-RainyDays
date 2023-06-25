@@ -1,77 +1,122 @@
 /* PRODUCT PAGE */
 
-.product, .product-images__wrapper, .size-form {
-    align-items: center;
+.product,
+.product-images__wrapper,
+.size-form {
+  align-items: center;
 }
 
-.product, .size-form {
-    gap: 40px;
+.product,
+.size-form {
+  gap: 40px;
 }
 
 .product {
-    justify-content: center;
+  justify-content: center;
 }
 
 .product__wrapper {
-    gap: 50px;
+  gap: 50px;
 }
 
-.product-images__wrapper, .product-details {
-    gap: 20px;
+.product-images__wrapper,
+.product-details {
+  gap: 20px;
 }
 
-.product-image {
-    transition: all 0.3s;
+.product-image:hover {
+  cursor: zoom-in;
 }
 
 .product-thumbnails__image {
-    height: 50px;
-    width: 40px;
-    padding: 2px;
-    border: 2px solid var(--clr-dark);
-    transition: transform 0.25s;
+  height: 50px;
+  width: 40px;
+  padding: 2px;
+  transition: transform 0.3s;
 }
 
 .product-thumbnails:hover img {
-    border: 2px solid var(--form-background-color);
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .product-thumbnails img:hover {
-    border: 2px solid var(--clr-dark);
-    opacity: 1;
-    transform: scale(1.5);
+  opacity: 1;
+  transform: scale(1.5);
 }
 
-.product-thumbnails, .size-form, .size-form__select{
-    flex-direction: row;
+.product-thumbnails,
+.size-form,
+.size-form__select {
+  flex-direction: row;
 }
 
 .product-thumbnails {
-    margin-top: 10px;
-    cursor: zoom-in;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
-.product-thumbnails, .size-form__select {
-    gap: 10px;
+.product-thumbnails,
+.size-form__select {
+  gap: 10px;
 }
 
 #size-form {
-    text-align: center;
+  text-align: center;
 }
 
 .price {
-    font-weight: bold;
-    font-size: 1.2em;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 fieldset {
-    border: none;
+  border: none;
 }
 
-.size-form-validation .error, .size-form-validation .success {
-    border: none;
-    padding: 0px;
-    text-align: left;
+.size-form-validation .error,
+.size-form-validation .success {
+  border: none;
+  padding: 0px;
+  text-align: left;
 }
 
+/* Modal Overlay */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1001;
+}
+
+.modal-content {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1002;
+  width: min(100% - 50px, 600px);
+  margin-inline: auto;
+}
+
+.modal-image {
+  background: var(--clr-background);
+  padding: 20px;
+}
+
+.modal-icon {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.icon-close {
+  color: var(--clr-light);
+}
+
+.icon-close:hover {
+  cursor: pointer;
+}

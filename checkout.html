@@ -4,15 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="You are one step away from your next adventure, don't let the journey end here!"
-    />
+    <meta name="description" content="You are one step away from your next adventure, don't let the journey end here!" />
     <title>RainyDays | Checkout</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lato:wght@400;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/checkout.css" rel="stylesheet" />
@@ -24,18 +18,11 @@
 
   <body>
     <header class="header-checkout">
-      <a href="index.html"
-        ><img
-          src="images/logo.png"
-          alt="The logotype for Rainydays rainjackets"
-      /></a>
+      <a href="/"><img src="images/logo.png" alt="The logotype for Rainydays rainjackets" /></a>
     </header>
 
     <main>
-      <iconify-icon
-        icon="bi:arrow-left-circle"
-        class="icon__back link"
-      ></iconify-icon>
+      <iconify-icon icon="bi:arrow-left-circle" class="icon__back link"></iconify-icon>
 
       <section class="checkout">
         <form id="checkoutform">
@@ -44,120 +31,55 @@
             <section class="checkoutform__shipping flex">
               <h2>Shipping information</h2>
               <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="John Rain"
-              />
-              <div class="contactform-error" id="name-error">
-                Please enter name
-              </div>
+              <input type="text" id="name" name="name" placeholder="John Rain" />
+              <div class="contactform-error" id="name-error">Please enter name</div>
 
               <label for="adress">Adress</label>
-              <input
-                type="text"
-                id="adress"
-                name="adress"
-                placeholder="Brenneriveien 4"
-              />
-              <div class="contactform-error" id="adress-error">
-                Please enter adress
-              </div>
+              <input type="text" id="adress" name="adress" placeholder="Brenneriveien 4" />
+              <div class="contactform-error" id="adress-error">Please enter adress</div>
 
               <div class="form-input-small zipcity flex">
                 <div class="zipcode__wrapper flex">
                   <label for="zipcode">Zipcode</label>
-                  <input
-                    type="number"
-                    inputmode="numeric"
-                    id="zipcode"
-                    name="zipcode"
-                    placeholder="0182"
-                  />
-                  <div class="contactform-error" id="zipcode-error">
-                    Please enter zipcode
-                  </div>
+                  <input type="number" inputmode="numeric" id="zipcode" name="zipcode" placeholder="0182" />
+                  <div class="contactform-error" id="zipcode-error">Please enter zipcode</div>
                 </div>
 
                 <div class="city__wrapper flex">
                   <label for="city">City</label>
                   <input type="text" id="city" name="city" placeholder="Oslo" />
-                  <div class="contactform-error" id="city-error">
-                    Please enter city
-                  </div>
+                  <div class="contactform-error" id="city-error">Please enter city</div>
                 </div>
               </div>
 
               <label for="country">Country</label>
-              <input
-                type="text"
-                id="country"
-                name="country"
-                placeholder="Norway"
-              />
-              <div class="contactform-error" id="country-error">
-                Please enter country
-              </div>
+              <input type="text" id="country" name="country" placeholder="Norway" />
+              <div class="contactform-error" id="country-error">Please enter country</div>
             </section>
 
             <section class="checkoutform__payment flex">
               <h2>Payment information</h2>
               <div class="payment-cards">
                 <img src="images/visa_icon.svg" alt="visa paymentcard" />
-                <img
-                  src="images/mastercard_icon.svg"
-                  alt="mastercard paymentcard"
-                />
+                <img src="images/mastercard_icon.svg" alt="mastercard paymentcard" />
               </div>
               <label for="cardname">Cardholders Name</label>
-              <input
-                type="text"
-                id="cardname"
-                name="cardname"
-                placeholder="John Rain"
-              />
-              <div class="contactform-error" id="cardname-error">
-                Please enter cardholders name
-              </div>
+              <input type="text" id="cardname" name="cardname" placeholder="John Rain" />
+              <div class="contactform-error" id="cardname-error">Please enter cardholders name</div>
               <label for="cardnumber">Cardnumber</label>
-              <input
-                type="number"
-                inputmode="numeric"
-                id="cardnumber"
-                name="cardnumber"
-                placeholder="16 digits eg. 1234 5678 1234 5678"
-              />
-              <div class="contactform-error" id="cardnumber-error">
-                Please enter a valid cardnumber
-              </div>
+              <input type="number" inputmode="numeric" id="cardnumber" name="cardnumber" placeholder="16 digits eg. 1234 5678 1234 5678" />
+              <div class="contactform-error" id="cardnumber-error">Please enter a valid cardnumber</div>
               <div class="form-input-small flex">
                 <div class="expdate-container flex">
                   <label for="expdate">Mm/Yy</label>
-                  <input
-                    type="number"
-                    inputmode="numeric"
-                    id="expdate"
-                    name="expdate"
-                    placeholder="0624"
-                  />
-                  <div class="contactform-error" id="expdate-error">
-                    Please enter date
-                  </div>
+                  <input type="number" inputmode="numeric" id="expdate" name="expdate" placeholder="0624" />
+                  <div class="contactform-error" id="expdate-error">Please enter date</div>
                 </div>
                 <div class="cvc__wrapper flex">
                   <div class="cvc-container flex">
                     <label for="cvc">Cvc</label>
-                    <input
-                      type="number"
-                      inputmode="numeric"
-                      id="cvc"
-                      name="cvc"
-                      placeholder="123"
-                    />
-                    <div class="contactform-error" id="cvc-error">
-                      Please enter cvc
-                    </div>
+                    <input type="number" inputmode="numeric" id="cvc" name="cvc" placeholder="123" />
+                    <div class="contactform-error" id="cvc-error">Please enter cvc</div>
                   </div>
                 </div>
               </div>
@@ -173,16 +95,14 @@
 
     <footer>
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="/">Home</a></li>
 
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <p>
         Copyright &copy; 2023 |
-        <a href="https://www.michaelriver.dev" target="_blank"
-          >Michael Nilsson</a
-        >
+        <a href="https://www.michaelriver.dev" target="_blank">Michael Nilsson</a>
       </p>
     </footer>
   </body>

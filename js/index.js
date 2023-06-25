@@ -7,16 +7,15 @@ import { createMessage } from "./components/createMessage.js";
 const productsContainer = document.querySelector(".featured");
 
 async function featuredProducts() {
-    const products = await getFeaturedProducts();
-    try {
-        clearHtml(productsContainer);
-        renderFeaturedProducts(products, productsContainer);
-    }
-    catch(error) {
-        console.log(error);
-        createMessage(productsContainer, "error", "There was an error while loading the products, please try again");
-    };
-};
+  const products = await getFeaturedProducts();
+  try {
+    clearHtml(productsContainer);
+    renderFeaturedProducts(products, productsContainer);
+  } catch (error) {
+    console.log(error);
+    createMessage(productsContainer, "error", "There was an error while loading the products, please try again");
+  }
+}
 featuredProducts();
 
 // Subscribe Validation
@@ -28,10 +27,10 @@ const emailError = document.querySelector("#email-error");
 form.addEventListener("submit", subscribeValidation);
 
 function subscribeValidation(event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    if (validateEmail(email, email.value, emailError)) {
-        clearHtml(subscribeContainer);
-        createSubscribeValidationHtml(subscribeContainer);
-    };
-};
+  if (validateEmail(email, email.value, emailError)) {
+    clearHtml(subscribeContainer);
+    createSubscribeValidationHtml(subscribeContainer);
+  }
+}

@@ -13,35 +13,35 @@ const featuredProductsURL = api + productBase + featuredProducts;
 const productDetailsURL = api + productBase + id;
 
 async function getApi(url) {
-    const response = await fetch (url);
-    const results = await response.json();
-    return results;
-};
+  const response = await fetch(url);
+  const results = await response.json();
+  return results;
+}
 
 export async function getProducts() {
-    return await getApi(productsURL);
-};
+  return await getApi(productsURL);
+}
 
 export async function getFeaturedProducts() {
-    return await getApi(featuredProductsURL);
-};
+  return await getApi(featuredProductsURL);
+}
 
 export async function getProductDetails() {
-    return await getApi(productDetailsURL);
-};
+  return await getApi(productDetailsURL);
+}
 
 export function renderProducts(products, parentElement) {
-    products.forEach(product => {
-        createProductCardHtml(product, parentElement);
-    });
-};
+  products.forEach((product) => {
+    createProductCardHtml(product, parentElement);
+  });
+}
 
 export function renderFeaturedProducts(products, parentElement) {
-    products.forEach(product => {
-        createFeaturedProductHtml(product, parentElement);
-    });
-};
+  products.forEach((product) => {
+    createFeaturedProductHtml(product, parentElement);
+  });
+}
 
 export function renderProductDetails(product, parentElement) {
-    createProductDetailsHtml(product, parentElement);
-};
+  createProductDetailsHtml(product, parentElement);
+}
