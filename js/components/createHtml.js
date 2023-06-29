@@ -1,8 +1,20 @@
+/**
+ * Clears the HTML of an element
+ * @param {*} parentElement The element to clear
+ * @example
+ * const container = documentquerySelector(".container");
+ * clearHtml(container);
+ */
 export function clearHtml(parentElement) {
   parentElement.innerHTML = "";
 }
 
 // Featured Products
+/**
+ * Creates the HTML for a featured product
+ * @param {*} product The product to display
+ * @param {*} parentElement The element to append the HTML to
+ */
 export function createFeaturedProductHtml(product, parentElement) {
   const featuredProduct = document.createElement("div");
   featuredProduct.classList.add("featured__item", "flex");
@@ -32,6 +44,13 @@ export function createFeaturedProductHtml(product, parentElement) {
 }
 
 // Subscribe Validation
+/**
+ * Creates the HTML for the subscribe validation
+ * @param {*} parentElement The element to append the HTML to
+ * @example
+ * const validationContainer = document.querySelector(".validation");
+ * createSubscribeValidationHtml(validationContainer);
+ */
 export function createSubscribeValidationHtml(parentElement) {
   const validationContainer = document.createElement("div");
   validationContainer.classList.add("subscribe-background", "subscribe-success", "flex");
@@ -56,6 +75,11 @@ export function createSubscribeValidationHtml(parentElement) {
 }
 
 // Products Page
+/**
+ * Creates the HTML for a product card
+ * @param {*} product The product to display
+ * @param {*} parentElement The element to append the HTML to
+ */
 export function createProductCardHtml(product, parentElement) {
   const productLink = document.createElement("a");
   productLink.classList.add("card-link");
@@ -108,6 +132,11 @@ export function createProductCardHtml(product, parentElement) {
 }
 
 // ProductDetails Page
+/**
+ * Creates the HTML for a specific product details page
+ * @param {*} product The product to display
+ * @param {*} parentElement The element to append the HTML to
+ */
 export function createProductDetailsHtml(product, parentElement) {
   const detailsContainer = document.createElement("div");
   detailsContainer.classList.add("product__wrapper", "split");
@@ -214,6 +243,11 @@ export function createProductDetailsHtml(product, parentElement) {
 }
 
 // Image Modal
+/**
+ * Creates the HTML for an image modal for a product
+ * @param {*} product The product to create the modal for
+ * @param {*} parentElement The element to append the HTML to
+ */
 export function createImageModalHtml(product, parentElement) {
   const imageContainer = document.createElement("div");
   imageContainer.classList.add("modal-image");
@@ -226,6 +260,11 @@ export function createImageModalHtml(product, parentElement) {
 }
 
 // ShoppingCart
+/**
+ * Creates the HTML for an item to display in the shopping cart
+ * @param {*} item The item to display
+ * @param {*} parentElement The element to append the HTML to
+ */
 export function createShoppingCartHtml(item, parentElement) {
   const cartItem = document.createElement("div");
   cartItem.classList.add("shoppingcart-item", "flex");
@@ -290,6 +329,10 @@ export function createShoppingCartHtml(item, parentElement) {
 }
 
 // Checkout Validation
+/**
+ * Creates the HTML for the checkout success validation
+ * @param {*} parentElement The element to append the HTML to
+ */
 export function createCheckoutSuccessHtml(parentElement) {
   const successContainer = document.createElement("section");
   successContainer.classList.add("checkout-success", "flex");

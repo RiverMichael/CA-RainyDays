@@ -6,6 +6,9 @@ import { createMessage } from "./components/createMessage.js";
 // Bestsellers Section
 const productsContainer = document.querySelector(".featured");
 
+/**
+ * Displays the featured products
+ */
 async function featuredProducts() {
   const products = await getFeaturedProducts();
   try {
@@ -26,6 +29,9 @@ const emailError = document.querySelector("#email-error");
 
 form.addEventListener("submit", subscribeValidation);
 
+/**
+ * Validates if the input of the form is valid and displays an error message or a validation message
+ */
 function subscribeValidation(event) {
   event.preventDefault();
 

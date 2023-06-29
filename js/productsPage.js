@@ -11,15 +11,17 @@ const filterSelectColor = document.querySelector("#filter-color");
 sortSelect.addEventListener("change", sortProducts);
 filterSelectColor.addEventListener("change", filterProducts);
 
+/**
+ * Displays the products
+ */
 async function productsPage() {
-    const products = await getProducts();
-    try {
-        clearHtml(productsContainer);
-        renderProducts(products.reverse(), productsContainer);
-    }
-    catch(error) {
-        console.log(error);
-        createMessage(messageContainer, "error", "There was an error while loading this page, please try again");
-    };
-};
+  const products = await getProducts();
+  try {
+    clearHtml(productsContainer);
+    renderProducts(products.reverse(), productsContainer);
+  } catch (error) {
+    console.log(error);
+    createMessage(messageContainer, "error", "There was an error while loading this page, please try again");
+  }
+}
 productsPage();

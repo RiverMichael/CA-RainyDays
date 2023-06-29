@@ -18,6 +18,9 @@ iconArrowLeft.addEventListener("click", function () {
 modalOverlay.addEventListener("click", () => closeModal(modalContent, modalOverlay));
 closeModalButton.addEventListener("click", () => closeModal(modalContent, modalOverlay));
 
+/**
+ * Displays a specific product
+ */
 async function productDetails() {
   const product = await getProductDetails();
   try {
@@ -35,6 +38,9 @@ async function productDetails() {
   const sizeForm = document.querySelector("#size-form");
   sizeForm.addEventListener("submit", addToCart);
 
+  /**
+   * Adds an item to the cart in localstorage
+   */
   function addToCart(event) {
     const cartItems = getCartItems();
     const cartItemId = Math.floor(Math.random() * (999 - 1 + 1) + 1);
