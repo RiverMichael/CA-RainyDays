@@ -1,0 +1,116 @@
+/* PRODUCTS PAGE */
+
+.products-intro {
+    min-height: 30vh;
+    text-align: center;
+    gap: 30px;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.women {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/women.jpg);
+    background-size: cover; 
+    background-position: center 20%;
+}
+
+.men {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/men-intro.jpg);
+    background-size: cover; 
+    background-position: center 20%;
+}
+
+.products-intro h1 {
+    color: var(--clr-light);
+    min-width: 330px;
+    width: min(100% - 100px, 800px);
+}
+
+.products-intro li {
+    display: inline-block;
+    padding-inline: 10px;
+    text-transform: uppercase;
+}
+
+.products, .product-card {
+    display: grid;
+}
+
+.products {
+    grid-template-columns: 1fr;
+    margin-block: 100px;
+    gap: 50px;
+    width: min(100% - 50px, 1200px);
+    margin-inline: auto;
+}
+
+.product-card {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--clr-dark);
+    transition: transform 0.25s;
+}
+
+.product-card__details, .product-card {
+    gap: 20px;
+}
+
+.product-card h2 {
+    font-size: 2em;
+}
+
+
+.card-link, .card-link:hover {
+    color: var(--clr-dark);
+    text-transform: none;
+}
+
+.card-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.price {
+    font-weight: 700;
+}
+
+.filter {
+    width: min(100% - 50px, 1200px);
+    margin-inline: auto;
+    align-items: flex-start;
+    padding-top: 50px;
+    gap: 20px;
+}
+
+.filter h2 {
+    font-size: 1.5em;
+}
+
+.filter__wrapper {
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.filter select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    padding: 8px;
+    border-radius: 50px;
+    font-size: 1em;
+    border: 1px solid transparent;
+    color: var(--clr-dark);
+    background: var(--clr-background);
+    box-shadow: 0px 1px 4px var(--clr-dark);
+    transition-duration: 0.25s;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    width: 150px;
+}
+
+.filter select:hover {
+    border: 1px solid var(--clr-dark);
+}

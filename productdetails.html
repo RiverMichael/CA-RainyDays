@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The RainyDays rainjacket XLR 57, leave your comfort zone behind!" />
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/productdetails.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+
+    <script defer src="js/components/toggleNavigation.js"></script>
+    <script defer type="module" src="js/components/showItemsInCart.js"></script>
+    <script defer type="module" src="js/productDetails.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <iconify-icon id="hamburger" icon="pajamas:hamburger"></iconify-icon>
+      <a href="/"><img src="images/logo.png" alt="The logotype for Rainydays rainjackets" /></a>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="shoppingcart-icon">
+        <a href="shoppingcart.html" aria-label="Go to shoppingcart"> <iconify-icon icon="clarity:shopping-bag-solid"></iconify-icon></a>
+        <div class="circle"></div>
+      </div>
+    </header>
+
+    <main>
+      <iconify-icon icon="bi:arrow-left-circle" class="icon__back link"></iconify-icon>
+
+      <div class="message"></div>
+
+      <section class="product flex container">
+        <div class="loader"></div>
+      </section>
+
+      <div class="modal-overlay"></div>
+
+      <div class="modal-content">
+        <div class="modal-icon">
+          <iconify-icon icon="pajamas:close" class="icon-close"></iconify-icon>
+        </div>
+    </main>
+
+    <footer>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p>
+        Copyright &copy; 2023 |
+        <a href="https://www.michaelriver.dev" target="_blank">Michael Nilsson</a>
+      </p>
+    </footer>
+  </body>
+</html>

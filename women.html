@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore the rainjackets for women that you want for your next adventure, get out of your comfort zone today!" />
+    <title>RainyDays | Products | Women</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/products.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+
+    <script defer src="js/components/toggleNavigation.js"></script>
+    <script defer type="module" src="js/components/showItemsInCart.js"></script>
+    <script defer type="module" src="js/productsPage.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <iconify-icon id="hamburger" icon="pajamas:hamburger"></iconify-icon>
+      <a href="/"><img src="images/logo.png" alt="The logotype for Rainydays rainjackets" /></a>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#" class="active">Women</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="shoppingcart-icon">
+        <a href="shoppingcart.html" aria-label="Go to shoppingcart"> <iconify-icon icon="clarity:shopping-bag-solid"></iconify-icon></a>
+        <div class="circle"></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="products-intro women flex">
+        <ul>
+          <li class="products-intro__active" id="women">Women</li>
+          <li>
+            <a href="men.html" class="products-intro__link" id="men">Men</a>
+          </li>
+        </ul>
+        <h1>Jackets for women</h1>
+      </section>
+
+      <section class="filter flex">
+        <h2>Filter/Sort products</h2>
+        <div class="filter__wrapper flex">
+          <div class="sort-select">
+            <label for="sort" class="visually-hidden">Sort products</label>
+            <select name="sort" id="sort">
+              <option selected disabled value="">Sort Products</option>
+              <option value="price-low-high">Sort by price Low - High</option>
+              <option value="price-high-low">Sort by price High - Low</option>
+              <option value="name-az">Sort by name A - Z</option>
+              <option value="name-za">Sort by name Z - A</option>
+            </select>
+          </div>
+
+          <div class="filter-select" id="color">
+            <label for="filter-color" class="visually-hidden">Filter by color</label>
+            <select name="color" id="filter-color">
+              <option selected disabled value="">Filter by Color</option>
+              <option value="all">All Colors</option>
+              <option value="black">Black</option>
+              <option value="grey">Grey</option>
+              <option value="orange">Orange</option>
+              <option value="red">Red</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <div class="message"></div>
+
+      <section class="products">
+        <div class="loader"></div>
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p>
+        Copyright &copy; 2023 |
+        <a href="https://www.michaelriver.dev" target="_blank">Michael Nilsson</a>
+      </p>
+    </footer>
+  </body>
+</html>

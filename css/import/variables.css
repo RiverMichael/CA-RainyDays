@@ -1,0 +1,13 @@
+:root {
+    --text-header: "Lato";
+    --text-paragraph: "Karla";
+    --clr-button: #F4FFFC;
+    --clr-dark: #0A3641;
+    --clr-light: #F1FAF3;
+    --clr-execute: #04100D;
+    --clr-error: #8C0909;
+    --clr-success: #0d8c09;
+    --clr-background: #F3F4F4;
+    --clr-button-background: #205D5F;
+    --clr-form-background: #C9D2CB;
+}

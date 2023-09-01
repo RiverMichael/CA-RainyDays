@@ -1,0 +1,101 @@
+/* CHECKOUT */
+
+.checkout-wrapper {
+    margin: 30px;
+    border: 2px solid var(--clr-dark);
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    gap: 40px; 
+    background: #ececec;
+    width: min(100% - 100px, 400px);
+    margin-inline: auto;
+}
+
+.checkout h1, .checkoutform__action, .checkout-success {
+    text-align: center;
+}
+
+.checkoutform__shipping, .checkoutform__payment, .zipcode__wrapper, .city__wrapper, .expdate-container, .cvc-container, .cvc__wrapper {
+    gap: 5px;
+}
+
+#checkoutform {
+    padding-bottom: 50px;
+}
+
+#expdate, #cvc {
+    width: 60px;
+}
+
+.payment-cards img {
+    width: 10%;
+}
+
+.checkout h2 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.cvc__wrapper {
+    flex-direction: row;
+}
+
+.cvc__wrapper iconify-icon {
+    font-size: 1em;
+    align-self: center;
+}
+
+.cvc-info {
+    display: none;
+    font-size: 0.8em;
+    color: #8C0909;
+    font-weight: bold;
+}
+
+.form-input-small {
+    flex-direction: row;
+    gap: 20px;
+    max-width: 400px;
+}
+
+.zipcity > * {
+    flex: 1;
+}
+
+.cvc-info img {
+    width: 4em;
+}
+
+.icon__info {
+    font-size: 1.2em;
+    cursor: help;
+}
+
+.contactform-error {
+    color: var(--clr-error);
+    display: none;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.checkout-success__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/checkout-success.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.checkout-success {
+    width: min(100% - 100px, 1000px);
+    margin-inline: auto;
+    gap: 50px;
+    color: var(--clr-light);
+}
+
+.checkout-success__text {
+    min-width: 320px;
+}

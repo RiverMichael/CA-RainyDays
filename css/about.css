@@ -1,0 +1,24 @@
+/* ABOUT */
+
+.about {
+    gap: 50px;
+    padding-block: 50px;
+}
+
+.about, .about-story {
+    align-items: center;
+    justify-content: center;
+}
+
+.about-story {
+    gap: 50px;
+}
+
+.about-story h1, .about-action {
+    text-align: center;
+}
+
+.about-story__wrapper {
+    max-width: 560px;
+    gap: 20px;
+}

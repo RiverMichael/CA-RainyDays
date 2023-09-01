@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Don't stop! Proceed and join the journey and expand your comfort zone" />
+    <title>RainyDays | Shopping cart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/shoppingcart.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+
+    <script defer src="js/components/toggleNavigation.js"></script>
+    <script defer type="module" src="js/components/showItemsInCart.js"></script>
+    <script defer type="module" src="js/shoppingcart.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <iconify-icon id="hamburger" icon="pajamas:hamburger"></iconify-icon>
+      <a href="/"><img src="images/logo.png" alt="The logotype for Rainydays rainjackets" /></a>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="shoppingcart-icon">
+        <a href="#" aria-label="Go to shoppingcart"> <iconify-icon icon="clarity:shopping-bag-solid"></iconify-icon></a>
+        <div class="circle"></div>
+      </div>
+    </header>
+
+    <main class="shoppingcart flex">
+      <iconify-icon icon="bi:arrow-left-circle" class="icon__back link"></iconify-icon>
+      <div class="shoppingcart__card-wrapper container flex">
+        <section class="shoppingcart__card flex">
+          <h1>Shopping cart</h1>
+          <div class="shoppingcart__wrapper flex"></div>
+          <div class="shoppingcart__total flex">
+            <h3>Total amount</h3>
+            <p class="total-price">€ <span class="total-price__span" id="total-price__span">0</span></p>
+          </div>
+        </section>
+      </div>
+      <div class="shoppingcart__action">
+        <a href="checkout.html" class="cta cta-big cta-execute">Proceed to checkout</a>
+      </div>
+    </main>
+
+    <footer>
+      <ul>
+        <li><a href="/">Home</a></li>
+
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p>
+        Copyright &copy; 2023 |
+        <a href="https://www.michaelriver.dev" target="_blank">Michael Nilsson</a>
+      </p>
+    </footer>
+  </body>
+</html>
